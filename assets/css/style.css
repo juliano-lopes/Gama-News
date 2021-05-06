@@ -155,12 +155,47 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     .nav-menu-desktop {
         display: -ms-inline-flexbox;
         display: inline-flex;
+        justify-content: center;
     }
 }
 
 .menu-desktop {
     display: -ms-inline-flexbox;
     display: inline-flex;
+}
+
+@media screen and (min-width: 928px) {
+    .menu-desktop {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu-desktop {
+        padding-left: 0;
+    }
+}
+
+.nav-text-desktop {
+    width: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-right: 16px;
+    padding: 21px 50px;
+}
+
+.nav-text-desktop a {
+    font-family: 'Roboto', sans-serif;
+    color: #111111;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 
@@ -174,18 +209,13 @@ ol, ul {
     padding: 0;
 }
 
-.nav-text-desktop {
-    width: auto;
+.navcontrast {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-    align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
-    cursor: pointer;
-    padding-right: 16px;
-    padding: 21px 0;
-    padding-left: 16px;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .section-nav.active-nav{
@@ -287,16 +317,6 @@ ol, ul {
     padding-right: 12px;
     -ms-flex-align: center;
     align-items: center;
-}
-
-.navcontrast {
-    display: grid;
-    grid-area: menu;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 8vh;
-    margin-bottom: 10px;
 }
 
 .checkbox {
