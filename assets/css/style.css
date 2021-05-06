@@ -45,6 +45,12 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     vertical-align: baseline;
 }
 
+ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 .nav {
     box-shadow: 0 0 2px #999;
     position: fixed;
@@ -150,6 +156,29 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 .icon-close-menu {
     width: 30px;
     font-size: 28px;
+}
+
+.section-nav li {
+    position: static;
+    margin-left: 0;
+}
+
+.li-menu-nav {
+    border-bottom: 1px solid #fff;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: static;
+    margin-left: 0;
+}
+
+.li-menu-nav a {
+    font-family: 'Roboto Slab';
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 1024px) {
