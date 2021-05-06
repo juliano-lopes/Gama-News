@@ -354,3 +354,74 @@ ol, ul {
 	transform: translateX(24px);
 }
 
+body .container-gamanews {
+    position: relative;
+    z-index: 1;
+    min-height: calc(100vh - 300px);
+}
+
+.content {
+    padding-top: 90px;
+}
+
+.container-gamanews {
+    font-family: 'Roboto Slab';
+}
+
+@media screen and (min-width: 782px) {
+    .content {
+        padding-top: 90px;
+    }
+}
+
+.content {
+    min-height: calc(100vh - 80px - 238px);
+}
+
+.container-gamanews {
+    min-height: 100vh;
+    width: 100%;
+}
+
+main {
+    display: block;
+}
+
+.top-0 {
+    top: o;
+}
+
+.left-0 {
+    left: 0;
+}
+
+.relative {
+    position: relative;
+}
+
+.secaoNoticia {
+    min-width: 320px;
+    min-height: 300px;
+    height: calc(100vh - 220px);
+}
+
+.noticiaPrincipal {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    left: 0;
+}
+
+.w-full img {
+    width: 100%;
+}
+
+@media screen and (min-width: 1140px) {
+    .noticia-element {
+        height: calc(100vh - 90px);
+    }
+}
+
+.noticia-element {
+    height: calc(100vh - 220px);
+}
