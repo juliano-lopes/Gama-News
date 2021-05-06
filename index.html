@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,9 @@
     <title>Página inicial - GAMA News</title>
     <link rel="stylesheet" href="/assets/css/style.css">
 	<script src="assets/js/noticia.js"></script>
+    <script src="/assets/js/app.js"></script>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -21,12 +24,13 @@
             <section class="navmenu">
                 <ul class="menu">
                     <li>
+                        <a href="/assets/pages/index.html" class="home-menu">
                         <a href="index.html" class="">
                             Home
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="">
+                        <a href="/assets/pages/sobre_page.html" class="sobre-menu">
                             Sobre
                         </a>
                     </li>
@@ -41,6 +45,14 @@
                         </a>
                     </li>
                 </ul>
+            </section>
+            <section class="contrast-menu">
+                <div>
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox" class="label">
+                        <div class="ball"></div>
+                    </label>
+                </div>
             </section>
         </nav>
     </header>
@@ -141,7 +153,7 @@
 <img src="img/noticia-israel.jpg" aut=""> <br>
 <a href="#" style="display: block" id="mostrar5" onclick="mostrarNoticia5()">leia mais</a>
 <span id="mostrarNoticia5" style="display: none">
-<p> Israel criou o programa de vacinação mais caro do mundo, conseguindo erradicar a COVID-19 do país até então.   No país, a rotina praticamente já voltou ao que era antes da pandemia, com exceção do uso de máscaras em locais fechados, que ainda é obrigatório. Todas as escolas e universidades já foram reabertas e as regras do uso de máscaras em ambientes externos está mais flexível. </p
+<p> Israel criou o programa de vacinação mais caro do mundo, conseguindo erradicar a COVID-19 do país até então.   No país, a rotina praticamente já voltou ao que era antes da pandemia, com exceção do uso de máscaras em locais fechados, que ainda é obrigatório. Todas as escolas e universidades já foram reabertas e as regras do uso de máscaras em ambientes externos está mais flexível. </p>
 <p> Os pesquisadores descobriram que a vacinação em massa reduziu, inicialmente, os casos e as hospitalizações de pessoas com mais de 60 anos, e na sequência entre pessoas mais jovens e outros grupos, com base nas prioridades. </p>
      <p> "Nossa análise demonstra os efeitos de uma campanha de vacinação nacional na vida real em uma dinâmica de pandemia", dizem os cientistas no estudo. </p>
 <p> Os números atuais de Israel em relação ao início do ano, ainda em janeiro, mostram uma redução de 98% dos casos, uma queda de 93% de contaminados em situação crítica, além de 87% menos registros de mortes. </p>
@@ -181,5 +193,8 @@ Fonte: Agência Brasil
 </div>
    </section> 
     </main>
+
+    <script src="/assets/js/app.js"></script>
 </body>
+
 </html>
