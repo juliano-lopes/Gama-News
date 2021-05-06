@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GAMA News</title>
+    <title>Página inicial - GAMA News</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/noticia.js"></script>
-
 </head>
-
 <body>
     <header>
         <nav class="navbar">
@@ -24,7 +21,6 @@
             <section class="navmenu">
                 <ul class="menu">
                     <li>
-
                         <a href="index.html" class="">
                             Home
                         </a>
@@ -64,15 +60,16 @@
     </header>
     <main>
         <section class="secaoNoticia">
-            <div class="noticiaPrincipal">
-                <div class="noticia1">
-                    <article>
+		            <article class="noticia">
+                <div class="cabecalho-noticia">
                         <h2>Itaú cria projeto para reunir doações contra o Coronavírus </h2>
                         <p> O banco Itaú criou o projeto Todos Pela Saúde, que reúne doações para ajudar na luta contra
                             a pandemia do novo Coronavírus. </p>
                         <img src="img/noticia-itau.jpg" aut=""> <br>
-                        <a href="#" style="display: block" id="mostrar1" onclick="mostrarNoticia1()">leia mais</a>
-                        <span id="mostrarNoticia1" style="display: none">
+                    <button title="Notícia 1" onclick="mostrarOcultarNoticia(this);" aria-expanded="false">leia
+                        mais</button>
+						</div>
+                <div class="corpo-noticia" style="display: none;">
                             <p> Contando com quatro linhas de atuação, sua proposta é de garantir a informação,
                                 proteção, cuidados e auxílio para a retomada da sociedade para a normalidade. </p>
                             <p> O grupo é composto por especialistas da área da saúde que trabalham em parceria com o
@@ -89,50 +86,45 @@
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
-
                                 <br>
                                 <br>
                                 Fonte: Sinthoresp - Notícias
                             </p>
                             <br>
-                            <a href="#" id="fechar1" onclick="mostrarNoticia1()">fechar</a>
-                        </span>
-
+</div>
                     </article>
-                </div>
-                <div class="noticia2">
-                    <article>
+		            <article class="noticia">
+                <div class="cabecalho-noticia">
                         <h2>'Circo Sobre Rodas' leva o riso às crianças mesmo em meio à pandemia</h2>
                         <img src="img/noticia-circo.jpg" aut=""> <br>
-                        <a href="#" style="display: block" id="mostrar2" onclick="mostrarNoticia2()">leia mais</a>
-                        <span id="mostrarNoticia2" style="display: none">
+                    <button title="Notícia 2" onclick="mostrarOcultarNoticia(this);" aria-expanded="false">leia
+                        mais</button>
+</div>
+                <div class="corpo-noticia" style="display: none;">
                             <p> Palhaços divertiram crianças e adultos e distribuíram máscaras durante ação em bairros
                                 de Guarulhos, na Grande São Paulo. Grupo anseia voltar às ruas em breve. </p>
                             <p> Confira o vídeo do projeto:
-
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/qfCVYbmCcDI"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
-
                                 <br>
-
                                 Fonte: G1 - Bem Estar
                             </p>
                             <br>
-                            <a href="#" id="fechar2" onclick="mostrarNoticia2()">fechar</a>
-                        </span>
+						</div>
                     </article>
-                </div>
-                <div class="noticia3">
-                    <article>
+		            <article class="noticia">
+                <div class="cabecalho-noticia">
                         <h2> A cachorrinha fiel que esperou por dias na porta do hospital até seu dono ter alta</h2>
                         <p> A cachorra de estimação de Cemal Senturk é muito, muito fiel a ele.
                             Por seis dias, Boncuk foi todas as manhãs para a porta de um hospital da cidade turca de
                             Trabzon para esperar por seu dono. </p>
                         <img src="img/noticia-cachorrinha.jpg" aut=""> <br>
-                        <a href="#" style="display: block" id="mostrar3" onclick="mostrarNoticia3()">leia mais</a>
-                        <span id="mostrarNoticia3" style="display: none">
+                    <button title="Notícia 3" onclick="mostrarOcultarNoticia(this);" aria-expanded="false">leia
+                        mais</button>
+</div>
+<div class="corpo-noticia" style="display: none">
                             <p> Cemal estava internado no local, onde estava sendo tratado para uma embolia cerebral.
                             </p>
                             <p> De noite, Boncuk ia embora ao concluir que não veria seu dono naquele dia, mas sempre
@@ -144,28 +136,26 @@
                                 feliz". </p>
                             <p> Pelo visto, o sentimento é recíproco. </p>
                             <p> Assista ao vídeo:
-
                                 <iframe width="400" height="500" frameborder="0"
                                     src="https://www.bbc.com/portuguese/av-embeds/geral-55804777"></iframe>
-
                                 <br>
                                 <br>
                                 Fonte: BBC News Brasil
                             </p>
                             <br>
-                            <a href="#" id="fechar3" onclick="mostrarNoticia3()">fechar</a>
-                        </span>
+						</div>
                     </article>
-                </div>
-                <div class="noticia4">
-                    <article>
-                        <h2>Araraquara SP zera mortes pela segunda vez em uma semana </h2>
+		            <article class="noticia">
+                <div class="cabecalho-noticia">
+				<h2>Araraquara SP zera mortes pela segunda vez em uma semana </h2>
                         <p> A cidade de Araraquara, no interior de São Paulo, zerou novamente as mortes por Covid-19
                             neste sábado 03/04. Essa é a segunda vez em uma semana que o município não tem óbitos pela
                             doença;</p>
                         <img src="img/noticia-araraquara.jpg" aut=""> <br>
-                        <a href="#" style="display: block" id="mostrar4" onclick="mostrarNoticia4()">leia mais</a>
-                        <span id="mostrarNoticia4" style="display: none">
+                    <button title="Notícia 4" onclick="mostrarOcultarNoticia(this);" aria-expanded="false">leia
+                        mais</button>
+</div>
+<div class="corpo-noticia" style="display: none;">
                             <p> o registro anterior é de 26 de março. Com isso, a cidade mantém o número de 333 mortes
                                 desde o início da pandemia. </p>
                             <p> Desde a última quarta-feira, Araraquara vive um feriado prolongado com medidas mais
@@ -186,21 +176,21 @@
                                 Fonte: Jovem Pan
                             </p>
                             <BR>
-                            <a href="#" id="fechar4" onclick="mostrarNoticia4()">fechar</a>
-                        </span>
+						</div>
                     </article>
-                </div>
-                <div class="noticia5">
-                    <article>
-                        <h2>Israel está praticamente livre da COVID-19 após eficaz programa de imunização</h2>
+		            <article class="noticia">
+                <div class="cabecalho-noticia">
+				<h2>Israel está praticamente livre da COVID-19 após eficaz programa de imunização</h2>
                         <p> A pandemia ainda está longe de terminar, mas alguns países já vêm colhendo os resultados de
                             boas estratégias de prevenção da propagação da COVID-19. Um desses países é Israel, de
                             acordo com um estudo publicado nesta segunda-feira (19) na revista científica Nature,
                             comprovando de uma vez por todas que a vacinação em massa é crucial para conter a doença.
                         </p>
                         <img src="img/noticia-israel.jpg" aut=""> <br>
-                        <a href="#" style="display: block" id="mostrar5" onclick="mostrarNoticia5()">leia mais</a>
-                        <span id="mostrarNoticia5" style="display: none">
+                    <button title="Notícia 5" onclick="mostrarOcultarNoticia(this);" aria-expanded="false">leia
+                        mais</button>
+</div>
+<div class="corpo-noticia" style="display: none;">
                             <p> Israel criou o programa de vacinação mais caro do mundo, conseguindo erradicar a
                                 COVID-19 do país até então. No país, a rotina praticamente já voltou ao que era antes da
                                 pandemia, com exceção do uso de máscaras em locais fechados, que ainda é obrigatório.
@@ -222,13 +212,11 @@
                                 Fonte: EuroNews, Futurism - Canal Tech
                             </p>
                             <br>
-                            <a href="#" id="fechar5" onclick="mostrarNoticia5()">fechar</a>
-                        </span>
+						</div>
                     </article>
-                </div>
-                <div class="noticia6">
-                    <article>
-                        <h2> Butantan entrega mais 420 mil doses da CoronaVac ao Programa Nacional de Imunizações </h2>
+                		            <article class="noticia">
+                <div class="cabecalho-noticia">
+				<h2> Butantan entrega mais 420 mil doses da CoronaVac ao Programa Nacional de Imunizações </h2>
                         <p> O Instituto Butantan entregou hoje (30/04) uma remessa com 420 mil doses da vacina contra o
                             novo coronavírus, a CoronaVac. Até o momento, já foram disponibilizadas para o Programa
                             Nacional de Imunizações mais de 42 milhões de doses da vacina. </p>
@@ -236,8 +224,10 @@
                             recebidos da China. A previsão é que mais 1 milhão de doses sejam enviadas para serem
                             distribuídas para todo o país na próxima quinta-feira (6). </p>
                         <img src="img/noticia-butantan.jpg" aut=""> <br>
-                        <a href="#" style="display: block" id="mostrar6" onclick="mostrarNoticia6()">leia mais</a>
-                        <span id="mostrarNoticia6" style="display: none">
+                    <button title="Notícia 6" onclick="mostrarOcultarNoticia(this);" aria-expanded="false">leia
+                        mais</button>
+</div>
+<div class="corpo-noticia" style="display: none">
                             <p> A previsão inicial era de que terminasse hoje a entrega do primeiro contrato assinado
                                 com o Ministério da Saúde, para o fornecimento de 46 milhões de doses do imunizante. No
                                 entanto, houve um atraso na última entrega de insumo farmacêutico ativo (IFA), que
@@ -256,16 +246,14 @@
                                 <br>
                                 <br>
                                 Fonte: Agência Brasil
+								<br>
                             </p>
                             <br>
-                            <a href="#" id="fechar6" onclick="mostrarNoticia6()">fechar</a>
-                        </span>
+						</div>
                     </article>
-                </div>
             </div>
         </section>
     </main>
-
     <footer class="footer">
         <p>Esse site tem por objetivo mostrar boas notícias publicadas pela mídia sobre o Covid19, criado por
             alunos do treinamento Itaú Tech em parceria com Gama Academy. </p>
@@ -273,8 +261,7 @@
         <img src="assets/img/LogoGama.png" alt="logo Gama Academy">
         <p>&copy; GAMANEWS - todos os direitos reservados.</p>
     </footer>
-
-
+	
+	
 </body>
-
 </html>
