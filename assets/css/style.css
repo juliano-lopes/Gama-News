@@ -465,6 +465,11 @@ main {
     transition: .8s ease-in-out;
 }
 
+.blogCardsContainer2 {
+    width: 320px;
+    transition: .8s ease-in-out;
+}
+
 body.dark h2 {
     font-family: 'Roboto Slab';
     font-size: 2.25rem;
@@ -496,4 +501,30 @@ h2 {
     height: inherit;
     z-index: 5;
     object-fit: cover;
+}
+
+p {
+    font-family: 'Roboto Slab';
+    font-size: 22px;
+    text-align: center;
+}
+
+body.dark p {
+    color: white;
+}
+
+.article-sejabemvindo {
+    padding-bottom: 100px;
+}
+
+div.linha-vertical {
+	padding: 0;
+	width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+div.linha-vertical {
+	padding: .5em 0;
+	border-bottom: 2px solid rgb(189, 189, 189);
 }
