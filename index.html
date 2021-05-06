@@ -85,28 +85,33 @@
         </section>
     </header>
     <main class="content container-gamanews">
-        <section class="secaoNoticia top-0 left-0 relative">
-            <div class="noticiaPrincipal">
-                <div class="noticia1">
-                    <article class="w-full relative noticia-element">
-                        <h2>Itaú cria projeto para reunir doações contra o Coronavírus </h2>
-                        <p> O banco Itaú criou o projeto Todos Pela Saúde, que reúne doações para ajudar na luta contra a pandemia do novo Coronavírus. </p>
-                        <img src="img/noticia-itau.jpg" alt=""> <br>
-                        <a href="#" style="display: block" id="mostrar1" onclick="mostrarNoticia1()">leia mais</a>
-                        <span id="mostrarNoticia1" style="display: none">
-                            <p> Contando com quatro linhas de atuação, sua proposta é de garantir a informação, proteção, cuidados e auxílio para a retomada da sociedade para a normalidade. </p>
-                            <p> O grupo é composto por especialistas da área da saúde que trabalham em parceria com o SUS a fim de organizar as demandas dos estados para atuar em ações prioritárias no combate da doença. </p>
-                            <p> Dentre suas ações já realizadas, está a compra de mais de 80 milhões de equipamentos de proteção individual e entrega nas principais cidades em situação crítica pelo COVID-19 no país. </p>
-                            <a href="https://www.todospelasaude.org"> Para saber mais sobre a iniciativa, acesse: </a> <br>
-                            <p> Confira o vídeo abaixo e conheça a coletiva do projeto:https://www.youtube.com/watch?v=baU-vo7KWbw&t=20s<br>
-                                 <br>
-                                 Fonte: Sinthoresp - Notícias
-                            </p><br>
-     <a href="#" id="fechar1" onclick="mostrarNoticia1()">fechar</a>
-     </span>
+        <section>
+            <video autoplay muted loop id="myVideo">
+                <source src="/assets/video/O que o Todos pela Saúde já fez_.mp4" type="video/mp4">
+            </video>
+            <div class="content-video">
+                  <h1>Itaú cria projeto para reunir doações contra o Coronavírus</h1>
+                  <p>Lorem ipsum...</p>
+                <button id="myBtn" onclick="myFunction()">Pause</button>
+            </div>
+        </section>
     </main>
     <script src="/assets/js/btnMenu.js"></script>
     <script src="/assets/js/toggleContrast.js"></script>
+    <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+
+        function myFunction() {
+          if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+          } else {
+            video.pause();
+            btn.innerHTML = "Play";
+          }
+        }
+    </script>
 </body>
 
 </html>
