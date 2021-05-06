@@ -84,34 +84,14 @@
             </article>
         </section>
     </header>
-    <main class="content container-gamanews">
-        <section>
-            <video autoplay muted loop id="myVideo">
-                <source src="/assets/video/O que o Todos pela Saúde já fez_.mp4" type="video/mp4">
-            </video>
-            <div class="content-video">
-                  <h1>Itaú cria projeto para reunir doações contra o Coronavírus</h1>
-                  <p>Lorem ipsum...</p>
-                <button id="myBtn" onclick="myFunction()">Pause</button>
-            </div>
-        </section>
+    <main class="container-main">
+        <div class="bg-principal">
+            <img src="/assets/img/capa.png" alt="#">
+        </div>
+        
     </main>
     <script src="/assets/js/btnMenu.js"></script>
     <script src="/assets/js/toggleContrast.js"></script>
-    <script>
-        var video = document.getElementById("myVideo");
-        var btn = document.getElementById("myBtn");
-
-        function myFunction() {
-          if (video.paused) {
-            video.play();
-            btn.innerHTML = "Pause";
-          } else {
-            video.pause();
-            btn.innerHTML = "Play";
-          }
-        }
-    </script>
 </body>
 
 </html>
