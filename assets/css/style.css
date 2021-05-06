@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -6,62 +7,151 @@
     padding: 0;
 }
 
+*,::after, ::before {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: currentColor;
+}
+
+*, :focus {
+    outline: 0;
+}
+
+body {
+    margin: 0;
+}
+
 body {
     width: 100%;
     height: 100%;
-    background-color: black;
+    overflow-x: hidden;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-areas: "logo menu ...";
+body {
+    line-height: 1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.nav {
+    box-shadow: 0 0 2px #999;
+    position: fixed;
+    left: 0;
+    transition: .6s ease-in-out;
     width: 100%;
+    z-index: 60;
+    background-color: #fff;
+}
+
+.nav nav {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.nav-menu {
+    background-color: white;
+    display: grid;
+    font-family: 'Robot Slab', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    grid-template-areas: "... logo menu";
+    grid-template-columns: 1fr 3fr 1fr; 
     height: 8vh;
     padding: 0 10px;
-    background-color: white;
+    z-index: 10;
 }
 
-.navlogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: logo;
+.zmdi-hc-lg {
+    font-size: 1.33333333em;
+    line-height: .75em;
+    vertical-align: -15%;
+}
+
+.zmdi {
+    display: inline-block;
+    font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+    font-size: inherit;
+    text-rendering: auto;
+}
+
+.icon-burger {
+    color: #1d1d1d;
+    padding: 8px;
     width: 100%;
-    height: 8vh;
+    height: 100%;
+    padding-top: 9px;
+    margin-bottom: 6px;
+}
+
+.nav-menu .nav-logo {
+    -ms-flex-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    grid-area: logo;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .logo img {
     max-height: 50px;
 }
 
-.navmenu {
+.section-nav.active-nav{
+    -ms-transform: translate(0,0);
+    transform: translate(0,0);
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.section-nav {
+    padding: 24px;
+    background-color: #6EB853;
+    width: 95%;
+    max-width: 360px;
+    height: 100%;
+    z-index: 200;
+    position: fixed;
+    overflow: auto;
+    -ms-transform: translate(-101%,0);
+    transform: translate(-101%,0);
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.title-section-nav {
+    display: -ms-flexbox;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    grid-area: menu;
-    width: 100%;
-    height: 8vh;
+    color: #fff;
+    font-family: 'Roboto Slab';
+    font-size: 25px;
+    font-weight: 700;
 }
 
-.navmenu ul {
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
+.icon-close-menu {
+    width: 30px;
+    font-size: 28px;
 }
 
-.navmenu ul li {
-    display: inline;
-}
-
-.navmenu ul li a {
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    font-weight: 400;
-    padding: 2px 30px;
-    display: inline-block;
-    color: black;
-    text-decoration: none;
+@media screen and (min-width: 1024px) {
+    
 }
