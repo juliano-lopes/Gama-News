@@ -14,18 +14,48 @@
 <body>
     <header>
         <div class="nav">
-            <nav class="nav-menu">
+            <nav class="nav-menu nav-logo">
                 <article id="menuBurger" class="icon-burger-tablet">
                     <i style="height: 32px" class="zmdi zmdi-menu zmdi-hc-lg icon-burger"></i>
                 </article>
-                <section class="nav-logo">
-                    <a href="#" class="logo">
+                <section class="gridLogo">
+                    <a href="index.html" class="logo">
                         <picture>
                             <img src="/assets/img/GAMANEWS.png" alt="GAMA NEWS">
                         </picture>
                     </a>
                 </section>
+                <section class="nav-menu-desktop">
+                    <ul class="menu-desktop">
+                        <li class="nav-text-desktop">
+                            <a href="index.html" class="">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-text-desktop">
+                            <a href="sobre.html" class="">
+                                Sobre
+                            </a>
+                        </li>
+                        <li class="nav-text-desktop">
+                            <a href="contato.html" class="">
+                                Contato
+                            </a>
+                        </li>
+                        <li class="nav-text-desktop">
+                            <a href="saibamais.html" class="">
+                                Saiba Mais
+                            </a>
+                        </li>
+                    </ul>
+                </section>
                 <section class="navcontrast">
+                    <div>
+                        <input type="checkbox" class="checkbox" id="chk" />
+                        <label class="label" for="chk">
+                            <div class="ball"></div>
+                        </label>
+                    </div>
                 </section>
             </nav>
         </div>
@@ -39,16 +69,16 @@
                 </div>
                 <nav class="nav-menu-li">
                     <li class="li-menu-nav">
-                        <a href="index.html">Home</a>
+                        <a class="li-menu" href="index.html">Home</a>
                     </li>
                     <li class="li-menu-nav">
-                        <a href="#">Sobre</a>
+                        <a class="li-menu" href="sobre.html">Sobre</a>
                     </li>
                     <li class="li-menu-nav">
-                        <a href="contato.html">Contato</a>
+                        <a class="li-menu" href="contato.html">Contato</a>
                     </li>
                     <li class="li-menu-nav">
-                        <a href="#">Saiba Mais</a>
+                        <a class="li-menu" href="saibamais.html">Saiba Mais</a>
                     </li>
                 </nav>
             </article>
@@ -57,6 +87,7 @@
     <menu>
     </menu>
     <script src="/assets/js/btnMenu.js"></script>
+    <script src="/assets/js/toggleContrast.js"></script>
 </body>
 
 </html>
