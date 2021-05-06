@@ -360,24 +360,140 @@ body {
     overflow-x: hidden;
 }
 
+body .container-main {
+    position: relative;
+    z-index: 1;
+    min-height: calc(100vh-90px);
+}
+
+.content {
+    padding-top: 90px;
+}
+
+.content {
+    min-height: calc(100vh-90px);
+}
+
 .container-main {
+    min-height: 100%;
+    width: 100%;
+}
+
+main {
+    display: block;
+}
+
+.text-black {
+    color: #1d1d1d;
+}
+
+.left-0 {
+    left: 0;
+}
+
+.top-0 {
+    top: 0;
+}
+
+.relative {
+    position: relative;
+}
+
+.bg-gama-black {
+    background-color: #1d1d1d;
+}
+
+.heroCarousel {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    left: 0;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.heroCarouselElement {
+    height: calc(100vh - 90px);
+}
+
+.heroCarouselElement picture {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 90px;
+    height: inherit;
+    z-index: 5;
+    object-fit: cover;
+}
+
+.w-screen {
+    width: 100vw;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 888px) {
+    .blogCardsContainer {
+        width: 960px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .blogCardsContainer {
+        width: 640px;
+    }
+}
+
+.blogCardsContainer {
+    width: 320px;
+    transition: .8s ease-in-out;
+}
+
+body.dark h2 {
+    font-family: 'Roboto Slab';
+    font-size: 2.25rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Roboto Slab';
+    font-size: 2.25rem;
+    color: #33383c;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.blogDeNoticias {
+    display: block;
     width: 100%;
-    height: 100%;
+    object-fit: cover;
+    left: 0;   
 }
 
-.bg-principal {
-    display: -ms-flexbox;
+.blogDeNoticias picture {
     display: flex;
-    background: gray;
-}
-
-.bg-principal img {
-    display: -ms-flexbox;
-    display: flex;
-    min-height: 100%;
-    background-size: cover;
+    justify-content: center;
+    height: inherit;
+    z-index: 5;
+    object-fit: cover;
 }
