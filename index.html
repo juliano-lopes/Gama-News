@@ -6,223 +6,281 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GAMA News</title>
+    <link name="Material Design" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/noticia.js"></script>
-
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <section class="navlogo">
-                <a href="#" class="logo">
-                    <picture>
-                        <img src="assets/img/GAMANEWS.png" alt="GAMA NEWS">
-                    </picture>
-                </a>
-            </section>
-            <section class="navmenu">
-                <ul class="menu">
-                    <li>
-
-                        <a href="index.html" class="">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="sobre.html" class="">
-                            Sobre
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contato.html" class="">
-                            Contato
-                        </a>
-                    </li>
-                    <li>
-                        <a href="saibamais.html" class="">
-                            Saiba Mais
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <section class="contrast-menu">
-                <div>
-                    <input aria-label="Ativar contraste" type="checkbox" class="checkbox" id="checkbox">
-                    <label for="checkbox" class="label">
-                        <div class="ball"></div>
-                    </label>
+        <div class="nav">
+            <nav class="nav-menu nav-logo">
+                <article id="menuBurger" class="icon-burger-tablet">
+                    <i style="height: 32px" class="zmdi zmdi-menu zmdi-hc-lg icon-burger"></i>
+                </article>
+                <section class="gridLogo">
+                    <a href="index.html" class="logo">
+                        <picture>
+                            <img src="assets/img/GAMANEWS.png" alt="GAMA NEWS">
+                        </picture>
+                    </a>
+                </section>
+                <section class="nav-menu-desktop">
+                    <ul class="menu-desktop">
+                        <li class="nav-text-desktop">
+                            <a href="index.html" class="">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-text-desktop">
+                            <a href="sobre.html" class="">
+                                Sobre
+                            </a>
+                        </li>
+                        <li class="nav-text-desktop">
+                            <a href="contato.html" class="">
+                                Contato
+                            </a>
+                        </li>
+                        <li class="nav-text-desktop">
+                            <a href="saibamais.html" class="">
+                                Saiba Mais
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="navcontrast">
+                    <div>
+                        <input aria-label="Ativar contraste" type="checkbox" class="checkbox" id="chk" />
+                        <label class="label" for="chk">
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+                </section>
+            </nav>
+        </div>
+        <section id="section-nav" class="section-nav">
+            <article>
+                <div class="title-section-nav">
+                    <h1 class="title-menu-nav">
+                        MENU
+                    </h1>
+                    <i id="close-menu" class="icon-close-menu zmdi zmdi-close"></i>
                 </div>
-            </section>
-        </nav>
+                <nav class="nav-menu-li">
+                    <li class="li-menu-nav">
+                        <a class="li-menu" href="index.html">Home</a>
+                    </li>
+                    <li class="li-menu-nav">
+                        <a class="li-menu" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="li-menu-nav">
+                        <a class="li-menu" href="contato.html">Contato</a>
+                    </li>
+                    <li class="li-menu-nav">
+                        <a class="li-menu" href="saibamais.html">Saiba Mais</a>
+                    </li>
+                </nav>
+            </article>
+        </section>
     </header>
-    <main>
-        <section class="secaoNoticia">
-            <div class="noticiaPrincipal">
-                <div class="noticia1">
-                    <article>
-                        <h2>Itaú cria projeto para reunir doações contra o Coronavírus </h2>
+    <main class="content container-main">
+        <section class="homeHero top-0 left-0 relative text-black bg-gama-black">
+            <section class="heroCarousel">
+                <article class="heroCarouselElement relative w-full heroShow">
+                    <picture class="w-screen top-0 left-0 absolute overflow-hidden">
+                        <img class="object-cover w-inherit h-inherit lazyloaded" loading="lazy"
+                            src="assets/img/capa.png" alt="Gama News - #stayhome">
+                    </picture>
+                </article>
+            </section>
+        </section>
+        <section class="flex-container-sejabemvindo">
+            <div class="flex-container-titulo-sejabemvindo">
+                <h1>Seja bem-vindo!</h1>
+            </div>
+            <div class="flex-container-frase-sejabemvindo">
+                <article>
+                    <p>A pandemia do Coronavírus (Covid-19) assola o mundo todo com milhares de notícias negativas e
+                        preocupantes diariamente a mais de um ano. <br>
+                        Pensando nisso, essa página foi desenvolvida com o intuito de mudar esse cenário, fazendo um
+                        compilado do outro lado, de notícias que trazem ânimo e esperança a população mundial, ou seja,
+                        as notícias boas!<br>
+                        Então acompanhe conosco o ranking das melhores notícias que nós reunimos a respeito do vírus que
+                        é alvo das nossas preocupações atualmente.</p>
+                </article>
+            </div>
+        </section>
+        <section class="flex-container-noticias">
+            <div class="flex-container-titulo-noticias">
+                <h2>
+                    Notícias
+                </h2>
+            </div>
+        </section>
+        <section class="flex-container-section-noticias">
+            <article class="flex-container-area-noticia">
+                <div class="cabecalho-noticia">
+                    <h3>Itaú cria projeto para reunir doações contra o Coronavírus </h2>
                         <p> O banco Itaú criou o projeto Todos Pela Saúde, que reúne doações para ajudar na luta contra
                             a pandemia do novo Coronavírus. </p>
-                        <img src="img/noticia-itau.jpg" aut=""> <br>
-                        <a href="#" style="display: block" id="mostrar1" onclick="mostrarNoticia1()">leia mais</a>
-                        <span id="mostrarNoticia1" style="display: none">
-                            <p> Contando com quatro linhas de atuação, sua proposta é de garantir a informação,
-                                proteção, cuidados e auxílio para a retomada da sociedade para a normalidade. </p>
-                            <p> O grupo é composto por especialistas da área da saúde que trabalham em parceria com o
-                                SUS a fim de organizar as demandas dos estados para atuar em ações prioritárias no
-                                combate da doença. </p>
-                            <p> Dentre suas ações já realizadas, está a compra de mais de 80 milhões de equipamentos de
-                                proteção individual e entrega nas principais cidades em situação crítica pelo COVID-19
-                                no país. </p>
-                            <a href="https://www.todospelasaude.org"> Para saber mais sobre a iniciativa, acesse: </a>
-                            <br>
-                            <p> Confira o vídeo abaixo e conheça a coletiva do projeto:
-
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/baU-vo7KWbw"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-
-                                <br>
-                                <br>
-                                Fonte: Sinthoresp - Notícias
-                            </p>
-                            <br>
-                            <a href="#" id="fechar1" onclick="mostrarNoticia1()">fechar</a>
-                        </span>
-
-                    </article>
+                        <img class="image-noticia" src="img/noticia-itau.jpg" aut=""> <br>
+                        <button title="Notícia 1" onclick="mostrarOcultarNoticia(this);" aria-expanded="false">leia
+                            mais</button>
                 </div>
-                <div class="noticia2">
-                    <article>
-                        <h2>'Circo Sobre Rodas' leva o riso às crianças mesmo em meio à pandemia</h2>
-                        <img src="img/noticia-circo.jpg" aut=""> <br>
-                        <a href="#" style="display: block" id="mostrar2" onclick="mostrarNoticia2()">leia mais</a>
-                        <span id="mostrarNoticia2" style="display: none">
-                            <p> Palhaços divertiram crianças e adultos e distribuíram máscaras durante ação em bairros
-                                de Guarulhos, na Grande São Paulo. Grupo anseia voltar às ruas em breve. </p>
-                            <p> Confira o vídeo do projeto:
+                <div class="corpo-noticia" style="display: none;">
+                    <p> Contando com quatro linhas de atuação, sua proposta é de garantir a informação,
+                        proteção, cuidados e auxílio para a retomada da sociedade para a normalidade.
+                        O grupo é composto por especialistas da área da saúde que trabalham em parceria com o
+                        SUS a fim de organizar as demandas dos estados para atuar em ações prioritárias no
+                        combate da doença.
+                        Dentre suas ações já realizadas, está a compra de mais de 80 milhões de equipamentos de
+                        proteção individual e entrega nas principais cidades em situação crítica pelo COVID-19
+                        no país. </p>
+                    <a href="https://www.todospelasaude.org"> Para saber mais sobre a iniciativa, acesse: </a>
+                    <br>
+                    <p> Confira o vídeo abaixo e conheça a coletiva do projeto:
 
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/qfCVYbmCcDI"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-
-                                <br>
-
-                                Fonte: G1 - Bem Estar
-                            </p>
-                            <br>
-                            <a href="#" id="fechar2" onclick="mostrarNoticia2()">fechar</a>
-                        </span>
-                    </article>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/baU-vo7KWbw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <br>
+                        <br>
+                        Fonte: Sinthoresp - Notícias
+                    </p>
+                    <br>
                 </div>
-                <div class="noticia3">
-                    <article>
-                        <h2> A cachorrinha fiel que esperou por dias na porta do hospital até seu dono ter alta</h2>
+            </article>
+            <div class="linha-vertical"></div>
+            <article class="flex-container-area-noticia">
+                <div class="cabecalho-noticia">
+                    <h3>'Circo Sobre Rodas' leva o riso às crianças mesmo em meio à pandemia</h2>
+                        <img class="image-noticia" src="img/noticia-circo.jpg" aut=""> <br>
+                        <button title="Notícia 2" onclick="mostrarOcultarNoticia(this);" aria-expanded="false">leia
+                            mais</button>
+                </div>
+                <div class="corpo-noticia" style="display: none;">
+                    <p> Palhaços divertiram crianças e adultos e distribuíram máscaras durante ação em bairros
+                        de Guarulhos, na Grande São Paulo. Grupo anseia voltar às ruas em breve. </p>
+                    <p> Confira o vídeo do projeto:
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/qfCVYbmCcDI"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <br>
+                        Fonte: G1 - Bem Estar
+                    </p>
+                    <br>
+                </div>
+            </article>
+            <div class="linha-vertical"></div>
+            <article class="flex-container-area-noticia">
+                <div class="cabecalho-noticia">
+                    <h3> A cachorrinha fiel que esperou por dias na porta do hospital até seu dono ter alta</h2>
                         <p> A cachorra de estimação de Cemal Senturk é muito, muito fiel a ele.
                             Por seis dias, Boncuk foi todas as manhãs para a porta de um hospital da cidade turca de
                             Trabzon para esperar por seu dono. </p>
                         <img src="img/noticia-cachorrinha.jpg" aut=""> <br>
-                        <a href="#" style="display: block" id="mostrar3" onclick="mostrarNoticia3()">leia mais</a>
-                        <span id="mostrarNoticia3" style="display: none">
-                            <p> Cemal estava internado no local, onde estava sendo tratado para uma embolia cerebral.
-                            </p>
-                            <p> De noite, Boncuk ia embora ao concluir que não veria seu dono naquele dia, mas sempre
-                                voltava na manhã seguinte. </p>
-                            <p> A equipe do hospital a alimentou enquanto ela aguardava por Cemal por dias a fio. </p>
-                            <p> Até que ele finalmente recebeu alta - e foi prontamente recebido com muita alegria pela
-                                cadelinha. </p>
-                            <p> "Somos muito próximos, como se ela fosse humana", disse o dono de Boncuk. "Ela me faz
-                                feliz". </p>
-                            <p> Pelo visto, o sentimento é recíproco. </p>
-                            <p> Assista ao vídeo:
-
-                                <iframe width="400" height="500" frameborder="0"
-                                    src="https://www.bbc.com/portuguese/av-embeds/geral-55804777"></iframe>
-
-                                <br>
-                                <br>
-                                Fonte: BBC News Brasil
-                            </p>
-                            <br>
-                            <a href="#" id="fechar3" onclick="mostrarNoticia3()">fechar</a>
-                        </span>
-                    </article>
+                        <button title="Notícia 3" onclick="mostrarOcultarNoticia(this);" aria-expanded="false">leia
+                            mais</button>
                 </div>
-                <div class="noticia4">
-                    <article>
-                        <h2>Araraquara SP zera mortes pela segunda vez em uma semana </h2>
+                <div class="corpo-noticia" style="display: none">
+                    <p> Cemal estava internado no local, onde estava sendo tratado para uma embolia cerebral.
+                    </p>
+                    <p> De noite, Boncuk ia embora ao concluir que não veria seu dono naquele dia, mas sempre
+                        voltava na manhã seguinte. </p>
+                    <p> A equipe do hospital a alimentou enquanto ela aguardava por Cemal por dias a fio. </p>
+                    <p> Até que ele finalmente recebeu alta - e foi prontamente recebido com muita alegria pela
+                        cadelinha. </p>
+                    <p> "Somos muito próximos, como se ela fosse humana", disse o dono de Boncuk. "Ela me faz
+                        feliz". </p>
+                    <p> Pelo visto, o sentimento é recíproco. </p>
+                    <p> Assista ao vídeo:
+                        <iframe width="400" height="500" frameborder="0"
+                            src="https://www.bbc.com/portuguese/av-embeds/geral-55804777"></iframe>
+                        <br>
+                        <br>
+                        Fonte: BBC News Brasil
+                    </p>
+                    <br>
+                </div>
+            </article>
+            <div class="linha-vertical"></div>
+            <article class="flex-container-area-noticia">
+                <div class="cabecalho-noticia">
+                    <h3>Araraquara SP zera mortes pela segunda vez em uma semana </h2>
                         <p> A cidade de Araraquara, no interior de São Paulo, zerou novamente as mortes por Covid-19
                             neste sábado 03/04. Essa é a segunda vez em uma semana que o município não tem óbitos pela
                             doença;</p>
                         <img src="img/noticia-araraquara.jpg" aut=""> <br>
-                        <a href="#" style="display: block" id="mostrar4" onclick="mostrarNoticia4()">leia mais</a>
-                        <span id="mostrarNoticia4" style="display: none">
-                            <p> o registro anterior é de 26 de março. Com isso, a cidade mantém o número de 333 mortes
-                                desde o início da pandemia. </p>
-                            <p> Desde a última quarta-feira, Araraquara vive um feriado prolongado com medidas mais
-                                restritivas; o transporte público, por exemplo, está suspenso. Também há barreiras
-                                sanitárias e a entrada de pessoas no município só pode ocorrer com a apresentação de
-                                teste negativo para a Covid, sujeito a multa que varia de 120 a 6 mil reais. </p>
-                            <p> O endurecimento das restrições vai até este domingo; depois, o município retorna à fase
-                                emergencial do Plano São Paulo. </p>
-                            <p> Atualmente, são 182 pacientes internados – 74 moradores de Araraquara e 108 de outros
-                                municípios que foram transferidos para hospitais da cidade. Já a ocupação de leitos UTI
-                                está em 92%. </p>
-                            <p>  Araraquara também registrou, neste sábado, mais 30 casos da doença e chegou a 17.501.
-                            </p>
-                            <p>  Em fevereiro, a cidade, de 240 mil habitantes, fez dez dias de ‘lockdown’ com o
-                                objetivo de conter o avanço da doença.
-                                <br>
-                                <br>
-                                Fonte: Jovem Pan
-                            </p>
-                            <BR>
-                            <a href="#" id="fechar4" onclick="mostrarNoticia4()">fechar</a>
-                        </span>
-                    </article>
+                        <button title="Notícia 4" onclick="mostrarOcultarNoticia(this);" aria-expanded="false">leia
+                            mais</button>
                 </div>
-                <div class="noticia5">
-                    <article>
-                        <h2>Israel está praticamente livre da COVID-19 após eficaz programa de imunização</h2>
+                <div class="corpo-noticia" style="display: none;">
+                    <p> o registro anterior é de 26 de março. Com isso, a cidade mantém o número de 333 mortes
+                        desde o início da pandemia. </p>
+                    <p> Desde a última quarta-feira, Araraquara vive um feriado prolongado com medidas mais
+                        restritivas; o transporte público, por exemplo, está suspenso. Também há barreiras
+                        sanitárias e a entrada de pessoas no município só pode ocorrer com a apresentação de
+                        teste negativo para a Covid, sujeito a multa que varia de 120 a 6 mil reais. </p>
+                    <p> O endurecimento das restrições vai até este domingo; depois, o município retorna à fase
+                        emergencial do Plano São Paulo. </p>
+                    <p> Atualmente, são 182 pacientes internados – 74 moradores de Araraquara e 108 de outros
+                        municípios que foram transferidos para hospitais da cidade. Já a ocupação de leitos UTI
+                        está em 92%. </p>
+                    <p>  Araraquara também registrou, neste sábado, mais 30 casos da doença e chegou a 17.501.
+                    </p>
+                    <p>  Em fevereiro, a cidade, de 240 mil habitantes, fez dez dias de ‘lockdown’ com o
+                        objetivo de conter o avanço da doença.
+                        <br>
+                        <br>
+                        Fonte: Jovem Pan
+                    </p>
+                    <br>
+                </div>
+            </article>
+            <div class="linha-vertical"></div>
+            <article class="flex-container-area-noticia">
+                <div class="cabecalho-noticia">
+                    <h3>Israel está praticamente livre da COVID-19 após eficaz programa de imunização</h2>
                         <p> A pandemia ainda está longe de terminar, mas alguns países já vêm colhendo os resultados de
                             boas estratégias de prevenção da propagação da COVID-19. Um desses países é Israel, de
                             acordo com um estudo publicado nesta segunda-feira (19) na revista científica Nature,
                             comprovando de uma vez por todas que a vacinação em massa é crucial para conter a doença.
                         </p>
                         <img src="img/noticia-israel.jpg" aut=""> <br>
-                        <a href="#" style="display: block" id="mostrar5" onclick="mostrarNoticia5()">leia mais</a>
-                        <span id="mostrarNoticia5" style="display: none">
-                            <p> Israel criou o programa de vacinação mais caro do mundo, conseguindo erradicar a
-                                COVID-19 do país até então. No país, a rotina praticamente já voltou ao que era antes da
-                                pandemia, com exceção do uso de máscaras em locais fechados, que ainda é obrigatório.
-                                Todas as escolas e universidades já foram reabertas e as regras do uso de máscaras em
-                                ambientes externos está mais flexível. </p>
-                            <p> Os pesquisadores descobriram que a vacinação em massa reduziu, inicialmente, os casos e
-                                as hospitalizações de pessoas com mais de 60 anos, e na sequência entre pessoas mais
-                                jovens e outros grupos, com base nas prioridades. </p>
-                            <p> "Nossa análise demonstra os efeitos de uma campanha de vacinação nacional na vida real
-                                em uma dinâmica de pandemia", dizem os cientistas no estudo. </p>
-                            <p> Os números atuais de Israel em relação ao início do ano, ainda em janeiro, mostram uma
-                                redução de 98% dos casos, uma queda de 93% de contaminados em situação crítica, além de
-                                87% menos registros de mortes. </p>
-                            <p> Ainda há a preocupação, no entanto, com o surgimento de novas variantes e com a dúvida
-                                em relação à duração da proteção das vacinas.
-                                Até o momento, cerca de 61,7% dos 9,3 milhões de cidadãos israelenses estão imunizados.
-                                <br>
-                                <br>
-                                Fonte: EuroNews, Futurism - Canal Tech
-                            </p>
-                            <br>
-                            <a href="#" id="fechar5" onclick="mostrarNoticia5()">fechar</a>
-                        </span>
-                    </article>
+                        <button title="Notícia 5" onclick="mostrarOcultarNoticia(this);" aria-expanded="false">leia
+                            mais</button>
                 </div>
-                <div class="noticia6">
-                    <article>
-                        <h2> Butantan entrega mais 420 mil doses da CoronaVac ao Programa Nacional de Imunizações </h2>
+                <div class="corpo-noticia" style="display: none;">
+                    <p> Israel criou o programa de vacinação mais caro do mundo, conseguindo erradicar a
+                        COVID-19 do país até então. No país, a rotina praticamente já voltou ao que era antes da
+                        pandemia, com exceção do uso de máscaras em locais fechados, que ainda é obrigatório.
+                        Todas as escolas e universidades já foram reabertas e as regras do uso de máscaras em
+                        ambientes externos está mais flexível. </p>
+                    <p> Os pesquisadores descobriram que a vacinação em massa reduziu, inicialmente, os casos e
+                        as hospitalizações de pessoas com mais de 60 anos, e na sequência entre pessoas mais
+                        jovens e outros grupos, com base nas prioridades. </p>
+                    <p> "Nossa análise demonstra os efeitos de uma campanha de vacinação nacional na vida real
+                        em uma dinâmica de pandemia", dizem os cientistas no estudo. </p>
+                    <p> Os números atuais de Israel em relação ao início do ano, ainda em janeiro, mostram uma
+                        redução de 98% dos casos, uma queda de 93% de contaminados em situação crítica, além de
+                        87% menos registros de mortes. </p>
+                    <p> Ainda há a preocupação, no entanto, com o surgimento de novas variantes e com a dúvida
+                        em relação à duração da proteção das vacinas.
+                        Até o momento, cerca de 61,7% dos 9,3 milhões de cidadãos israelenses estão imunizados.
+                        <br>
+                        <br>
+                        Fonte: EuroNews, Futurism - Canal Tech
+                    </p>
+                    <br>
+                </div>
+            </article>
+            <div class="linha-vertical"></div>
+            <article class="flex-container-area-noticia">
+                <div class="cabecalho-noticia">
+                    <h3> Butantan entrega mais 420 mil doses da CoronaVac ao Programa Nacional de Imunizações </h2>
                         <p> O Instituto Butantan entregou hoje (30/04) uma remessa com 420 mil doses da vacina contra o
                             novo coronavírus, a CoronaVac. Até o momento, já foram disponibilizadas para o Programa
                             Nacional de Imunizações mais de 42 milhões de doses da vacina. </p>
@@ -230,42 +288,47 @@
                             recebidos da China. A previsão é que mais 1 milhão de doses sejam enviadas para serem
                             distribuídas para todo o país na próxima quinta-feira (6). </p>
                         <img src="img/noticia-butantan.jpg" aut=""> <br>
-                        <a href="#" style="display: block" id="mostrar6" onclick="mostrarNoticia6()">leia mais</a>
-                        <span id="mostrarNoticia6" style="display: none">
-                            <p> A previsão inicial era de que terminasse hoje a entrega do primeiro contrato assinado
-                                com o Ministério da Saúde, para o fornecimento de 46 milhões de doses do imunizante. No
-                                entanto, houve um atraso na última entrega de insumo farmacêutico ativo (IFA), que
-                                estava previsto para chegar até o fim de março. Assim, o Butantan trabalha agora para
-                                finalizar a entrega do primeiro contrato nas próximas semanas. </p>
-                            <p> O segundo contrato assinado entre o governo federal e o Butantan estipula a
-                                disponibilização de mais 54 milhões de doses de vacina até o final de agosto. </p>
-                            <h3> Nova vacina </h3>
-                            <p> Nessa semana, o Butantan também começou a produção de uma vacina própria contra o
-                                coronavírus, chamada de Butanvac. O imunizante ainda aguarda a autorização da Agência
-                                Nacional de Vigilância Sanitária (Anvisa) para ser testado em seres humanos. </p>
-                            <p> Segundo o governador de São Paulo, João Doria, caso haja rapidez na aprovação da nova
-                                vacina pela Anvisa, poderão ser fabricadas até 150 milhões de doses do imunizante até o
-                                final do ano. Até o momento, o instituto tem uma previsão de produzir, de acordo com o
-                                governador, pelo menos 40 milhões de doses.
-                                <br>
-                                <br>
-                                Fonte: Agência Brasil
-                            </p>
-                            <br>
-                            <a href="#" id="fechar6" onclick="mostrarNoticia6()">fechar</a>
-                        </span>
-                    </article>
+                        <button title="Notícia 6" onclick="mostrarOcultarNoticia(this);" aria-expanded="false">leia
+                            mais</button>
                 </div>
-            </div>
+                <div class="corpo-noticia" style="display: none">
+                    <p> A previsão inicial era de que terminasse hoje a entrega do primeiro contrato assinado
+                        com o Ministério da Saúde, para o fornecimento de 46 milhões de doses do imunizante. No
+                        entanto, houve um atraso na última entrega de insumo farmacêutico ativo (IFA), que
+                        estava previsto para chegar até o fim de março. Assim, o Butantan trabalha agora para
+                        finalizar a entrega do primeiro contrato nas próximas semanas. </p>
+                    <p> O segundo contrato assinado entre o governo federal e o Butantan estipula a
+                        disponibilização de mais 54 milhões de doses de vacina até o final de agosto. </p>
+                    <h3> Nova vacina </h3>
+                    <p> Nessa semana, o Butantan também começou a produção de uma vacina própria contra o
+                        coronavírus, chamada de Butanvac. O imunizante ainda aguarda a autorização da Agência
+                        Nacional de Vigilância Sanitária (Anvisa) para ser testado em seres humanos. </p>
+                    <p> Segundo o governador de São Paulo, João Doria, caso haja rapidez na aprovação da nova
+                        vacina pela Anvisa, poderão ser fabricadas até 150 milhões de doses do imunizante até o
+                        final do ano. Até o momento, o instituto tem uma previsão de produzir, de acordo com o
+                        governador, pelo menos 40 milhões de doses.
+                        <br>
+                        <br>
+                        Fonte: Agência Brasil
+                        <br>
+                    </p>
+                    <br>
+                </div>
+            </article>
         </section>
     </main>
     <footer class="footer">
         <p>Esse site tem por objetivo mostrar boas notícias publicadas pela mídia sobre o Covid19, criado por
             alunos do treinamento Itaú Tech em parceria com Gama Academy. </p>
-        <img src="assets/img/LogoItau.png" alt="logo Itaú">
-        <img src="assets/img/LogoGama.png" alt="logo Gama Academy">
+        <div class="footer-img">
+            <img src="assets/img/itau.png" alt="logo Itaú" style="height: 100px;">
+            <img src="assets/img/gama academy.png" alt="logo Gama Academy" style="height: 100px;">
+        </div>
         <p>&copy; GAMANEWS - todos os direitos reservados.</p>
     </footer>
+    <script src="assets/js/noticia.js"></script>
+    <script src="assets/js/btnMenu.js"></script>
+    <script src="assets/js/toggleContrast.js"></script>
 </body>
 
 </html>
