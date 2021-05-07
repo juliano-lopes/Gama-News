@@ -1,60 +1,18 @@
-function mostrarNoticia1(){
-	var noticia = document.getElementById("mostrarNoticia1").style.display;
-if(noticia == 'none'){
-	document.getElementById("mostrarNoticia1").style.display = 'block';
-	document.getElementById("mostrar1").style.display = 'none';
-}else{
-	document.getElementById("mostrarNoticia1").style.display = 'none';
-document.getElementById("mostrar1").style.display = 'block';
-}
-}
-function mostrarNoticia2(){
-	var noticia = document.getElementById("mostrarNoticia2").style.display;
-if(noticia == 'none'){
-	document.getElementById("mostrarNoticia2").style.display = 'block';
-	document.getElementById("mostrar2").style.display = 'none';
-}else{
-	document.getElementById("mostrarNoticia2").style.display = 'none';
-	document.getElementById("mostrar2").style.display = 'block';
-}
-}
-function mostrarNoticia3(){
-	var noticia = document.getElementById("mostrarNoticia3").style.display;
-if(noticia == 'none'){
-	document.getElementById("mostrarNoticia3").style.display = 'block';
-	document.getElementById("mostrar3").style.display = 'none';
-}else{
-	document.getElementById("mostrarNoticia3").style.display = 'none';
-	document.getElementById("mostrar3").style.display = 'block';
-}
-}
-function mostrarNoticia4(){
-	var noticia = document.getElementById("mostrarNoticia4").style.display;
-if(noticia == 'none'){
-	document.getElementById("mostrarNoticia4").style.display = 'block';
-	document.getElementById("mostrar4").style.display = 'none';
-}else{
-	document.getElementById("mostrarNoticia4").style.display = 'none';
-	document.getElementById("mostrar4").style.display = 'block';
-}
-}
-function mostrarNoticia5(){
-	var noticia = document.getElementById("mostrarNoticia5").style.display;
-if(noticia == 'none'){
-	document.getElementById("mostrarNoticia5").style.display = 'block';
-	document.getElementById("mostrar5").style.display = 'none';
-}else{
-	document.getElementById("mostrarNoticia5").style.display = 'none';
-	document.getElementById("mostrar5").style.display = 'block';
-}
-}
-function mostrarNoticia6(){
-	var noticia = document.getElementById("mostrarNoticia6").style.display;
-if(noticia == 'none'){
-	document.getElementById("mostrarNoticia6").style.display = 'block';
-	document.getElementById("mostrar6").style.display = 'none';
-}else{
-	document.getElementById("mostrarNoticia6").style.display = 'none';
-	document.getElementById("mostrar6").style.display = 'block';
-}
+function mostrarOcultarNoticia(botaoClicado) {
+	// pega o elemento button que contém o atributo aria-expanded com o valor true
+	let botaoExpandido = document.querySelector('button[aria-expanded="true"]');
+	// verifica se o botão existe, se é verdadeiro, se não é nulo
+	if (botaoExpandido) {
+		// pega o pai do pai do botão e busca dentro dele com um seletor o elemento que tenha a classe corpo-noticia e o oculta:
+		botaoExpandido.parentNode.parentNode.querySelector(".corpo-noticia").style.display = "none";
+		// coloca o atributo aria-expanded com o valor falso, ou seja, recolhido:
+		botaoExpandido.setAttribute("aria-expanded", "false");
+	}
+	// verifica se o botão que foi clicado é diferente daquele que estava expandido:
+	if (botaoClicado != botaoExpandido) {
+		// se for diferente, então coloca o clicado como expandido:
+		botaoClicado.setAttribute("aria-expanded", "true");
+		// pega o pai do pai do botão e busca dentro dele com um seletor o elemento que tenha a classe corpo-noticia e o deixa visível:
+		botaoClicado.parentNode.parentNode.querySelector(".corpo-noticia").style.display = "block";
+	}
 }
