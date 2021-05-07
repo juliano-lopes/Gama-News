@@ -438,45 +438,158 @@ main {
     overflow: hidden;
 }
 
-.py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+.flex-container-sejabemvindo {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(360deg, #6eb853, #569240);
 }
 
-.mx-auto {
-    margin-left: auto;
-    margin-right: auto;
+.flex-container-titulo-sejabemvindo {
+    display: inline-block;
+    text-align: center;
+    padding-top: 50px;
 }
 
-@media screen and (min-width: 888px) {
-    .blogCardsContainer {
-        width: 960px;
-    }
+.flex-container-frase-sejabemvindo {
+    display: inline-block;
+    text-align: center;
+    padding: 0 30px;
+    padding-top: 20px;
+    padding-bottom: 80px;
 }
 
-@media screen and (min-width: 768px) {
-    .blogCardsContainer {
-        width: 640px;
-    }
+.flex-container-sejabemvindo h2 {
+    font-family: 'Roboto Slab';
+    font-size: 60px;
+    text-align: center;
+    color: white;
 }
 
-.blogCardsContainer {
-    width: 320px;
-    transition: .8s ease-in-out;
+.flex-container-sejabemvindo p {
+    font-family: 'Roboto Slab';
+    font-size: 40px;
+    text-align: center;
+    color: white;
 }
 
-.blogCardsContainer2 {
-    width: 320px;
-    transition: .8s ease-in-out;
+.flex-container-noticias {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+}
+
+.flex-container-titulo-noticias {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.flex-container-titulo-noticias h2 {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #4c8637;
+}
+
+.flex-container-section-noticias {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.flex-container-area-noticia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 300px;
+}
+
+.cabecalho-noticia h3 {
+    font-family: 'Roboto Slab';
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+
+.cabecalho-noticia p {
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    margin-top: 30px;
+    transition: height .4s;
+}
+
+.cabecalho-noticia img {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.cabecalho-noticia button {
+    background: linear-gradient(to right, #6EB853, #5ea744);
+	cursor: pointer;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30px;
+	width: 150px;
+}
+
+.cabecalho-noticia button {
+    font-family: 'Roboto';
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.corpo-noticia {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.corpo-noticia p {
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    text-align: flex-start;
+    color: black;
+    margin-top: 30px;
+}
+
+.corpo-noticia h3 {
+    font-family: 'Roboto Slab';
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    padding-top: 30px;
 }
 
 body.dark h2 {
     font-family: 'Roboto Slab';
-    font-size: 2.25rem;
+    font-size: 60px;
     color: white;
     text-align: center;
     margin-bottom: 1rem;
     font-weight: 700;
+}
+
+body.dark h3 {
+    font-family: 'Roboto Slab';
+    font-size: 30px;
+    text-align: center;
+    color: white;
 }
 
 h2 {
@@ -488,34 +601,11 @@ h2 {
     font-weight: 700;
 }
 
-.blogDeNoticias {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-    left: 0;   
-}
-
-.blogDeNoticias picture {
-    display: flex;
-    justify-content: center;
-    height: inherit;
-    z-index: 5;
-    object-fit: cover;
-}
-
-p {
-    font-family: 'Roboto Slab';
-    font-size: 22px;
-    text-align: center;
-}
-
 body.dark p {
     color: white;
 }
 
-.article-sejabemvindo {
-    padding-bottom: 100px;
-}
+
 
 div.linha-vertical {
 	padding: 0;
@@ -527,4 +617,32 @@ div.linha-vertical {
 div.linha-vertical {
 	padding: .5em 0;
 	border-bottom: 2px solid rgb(189, 189, 189);
+}
+
+.footer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #6eb853;
+}
+
+.footer p {
+    font-family: 'Roboto Slab';
+    font-size: 18px;
+    text-align: center;
+    margin: 20px;
+    color: #1d1d1d;    
+}
+
+.footer-img {
+    display: flex;
+    flex-direction: row;
+    object-fit: cover;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-img img {
+    padding: 10px;
 }
