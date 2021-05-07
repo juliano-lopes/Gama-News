@@ -5,69 +5,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saiba mais - GAMA News</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/noticia.js"></script>
-
+    <title>GAMA News</title>
+    <link name="Material Design" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+	<script src="assets/js/noticia.js"></script>
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <section class="navlogo">
-                <a href="#" class="logo">
-                    <picture>
-                        <img src="/assets/img/GAMANEWS.png" alt="GAMA NEWS">
-                    </picture>
-                </a>
-            </section>
-            <section class="navmenu">
-                <ul class="menu">
-                    <li>
-
-                        <a href="index.html" class="">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="sobre.html" class="">
-                            Sobre
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contato.html" class="">
-                            Contato
-                        </a>
-                    </li>
-                    <li>
-                        <a href="saibamais.html" class="">
-                            Saiba Mais
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <section class="contrast-menu">
-                <div>
-                    <input aria-label="Ativar contraste" type="checkbox" class="checkbox" id="checkbox">
-                    <label for="checkbox" class="label">
-                        <div class="ball"></div>
-                    </label>
+        <div class="nav">
+            <nav class="nav-menu nav-logo">
+                <article id="menuBurger" class="icon-burger-tablet">
+                    <i style="height: 32px" class="zmdi zmdi-menu zmdi-hc-lg icon-burger"></i>
+                </article>
+                <section class="gridLogo">
+                    <a href="index.html" class="logo">
+                        <picture>
+                            <img src="/assets/img/GAMANEWS.png" alt="GAMA NEWS">
+                        </picture>
+                    </a>
+                </section>
+                <section class="nav-menu-desktop">
+                    <ul class="menu-desktop">
+                        <li class="nav-text-desktop">
+                            <a href="index.html" class="">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-text-desktop">
+                            <a href="sobre.html" class="">
+                                Sobre
+                            </a>
+                        </li>
+                        <li class="nav-text-desktop">
+                            <a href="contato.html" class="">
+                                Contato
+                            </a>
+                        </li>
+                        <li class="nav-text-desktop">
+                            <a href="saibamais.html" class="">
+                                Saiba Mais
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="navcontrast">
+                    <div>
+                        <input type="checkbox" class="checkbox" id="chk" />
+                        <label class="label" for="chk">
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+                </section>
+            </nav>
+        </div>
+        <section id="section-nav" class="section-nav">
+            <article>
+                <div class="title-section-nav">
+                    <h2 class="title-menu-nav">
+                        MENU
+                    </h2>
+                    <i id="close-menu" class="icon-close-menu zmdi zmdi-close"></i>
                 </div>
-            </section>
-        </nav>
+                <nav class="nav-menu-li">
+                    <li class="li-menu-nav">
+                        <a class="li-menu" href="index.html">Home</a>
+                    </li>
+                    <li class="li-menu-nav">
+                        <a class="li-menu" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="li-menu-nav">
+                        <a class="li-menu" href="contato.html">Contato</a>
+                    </li>
+                    <li class="li-menu-nav">
+                        <a class="li-menu" href="saibamais.html">Saiba Mais</a>
+                    </li>
+                </nav>
+            </article>
+        </section>
     </header>
-    <main>
-    </main>
+    <menu>
+    </menu>
 
     <footer class="footer">
         <p>Esse site tem por objetivo mostrar boas notícias publicadas pela mídia sobre o Covid19, criado por
             alunos do treinamento Itaú Tech em parceria com Gama Academy. </p>
-        <img src="LogoItau.png" alt="logo Itaú">
-        <img src="LogoGama.png" alt="logo Gama Academy">
-        <p>&copy; GAMANEWS - todos os direitos reservados.</p>
+            <div class="footer-img">
+                <img src="assets/img/itau.png" alt="logo Itaú" style="height: 100px;">
+                <img src="assets/img/gama academy.png" alt="logo Gama Academy" style="height: 100px;">
+            </div>
+            <p>&copy; GAMANEWS - todos os direitos reservados.</p>
     </footer>
 
-
+    <script src="/assets/js/btnMenu.js"></script>
+    <script src="/assets/js/toggleContrast.js"></script>
 </body>
 
 </html>
