@@ -9,8 +9,33 @@
     <link name="Material Design" rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-</head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>;
+<script type="text/javascript" charset="utf-8">
+var $z = jQuery.noConflict();
+$z(document).ready(function(){
+$z("#aumentar-fonte").click(function () {
+var size = $z("#content p").css('font-size');
 
+size = size.replace('px', '');
+size = parseInt(size) + 2;
+
+$z("#content p").animate({'font-size' : size + 'px'});
+return false;
+});
+
+$z("#diminuir-fonte").click(function () {
+var size = $z("#content p").css('font-size');
+
+size = size.replace('px', '');
+size = parseInt(size) - 2;
+
+$z("#content p").animate({'font-size' : size + 'px'});
+return false;
+});
+});
+</script>
+</head>
+<div id="content">
 <body>
     <header>
         <div class="nav">
@@ -84,25 +109,15 @@
             </article>
         </section>
     </header>
-<td width="24%" align="left" valign="middle"> <span class="atalho"> </span>
-  <table width="200" border="0" cellspacing="3" cellpadding="3">
-    <tr> 
-      <td><span class="atalho"> 
-									<a class="atalho" href="javascript: zoom(mais)" onFocus="javascript: zoom(mais)" accesskey="A" title="Aumenta 10%">Aumenta letra - <span id="ksht4"></span></a>&nbsp;<br>
-									<a class="atalho" href="javascript: zoom(menos)" onFocus="javascript: zoom(menos)" accesskey="D" title="Diminui 10%">Diminui letra  - <span id="ksht5"></span></a>&nbsp;<br>
-									<a class="atalho" href="javascript: index=9;zoom(mais)" onFocus="javascript: index=9;zoom(mais)" accesskey="N" title="Tamanho Normal">Letra normal - <span id="ksht6"></span></a>&nbsp;<br>
-									<label for="aumento do texto"><input type="text" value="100%" id="percent" size="5" name="schriftgroesse" alt="Porcentagem do aumento do texto"></label>
-								</span></td>
-    </tr>
-  </table>
-  <span class="atalho"><br>
-  &nbsp;<br>
-  <label for="aumento do texto"></label>
-  </span>
-<p>
-    <script language="javascript" src="assets/js/zoom.js" type="text/javascript"></script>
-  </p></td>
+<!-- DIMINUIR FONTE -->
+<span id="diminuir-fonte">
+<a title="Diminuir Fonte" alt="Diminuir">A-</a>
+</span>
 
+<!-- AUMENTAR FONTE -->
+<span id="aumentar-fonte">
+<a title="Aumentar Fonte" alt="Aumentar">A+</a>
+</span>
     <main class="content container-main">
         <section class="homeHero top-0 left-0 relative text-black bg-gama-black">
             <section class="heroCarousel">
@@ -348,6 +363,8 @@
     <script src="assets/js/noticia.js"></script>
     <script src="assets/js/btnMenu.js"></script>
     <script src="assets/js/toggleContrast.js"></script>
+    <script src="assets/js/fonte.js"></script>
+</div>
 </body>
 
 </html>
