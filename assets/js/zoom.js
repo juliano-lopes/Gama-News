@@ -1,4 +1,4 @@
-<! -
+
 
 	var ie4 = document.all &&! document.getElementById
 	var ns4
@@ -44,4 +44,3 @@
 			document.zoomerns.document.zoomerns_sub.document.close ();
 		}
 	}
-// ->
