@@ -655,8 +655,6 @@ body.dark p {
     color: white;
 }
 
-
-
 div.linha-vertical {
 	padding: 0;
 	width: 100%;
@@ -669,16 +667,16 @@ div.linha-vertical {
 	border-bottom: 2px solid rgb(189, 189, 189);
 }
 
-body.dark p {
-    color: rgb(26, 26, 26);
-}
-
 .footer {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
     background: #6eb853;
+}
+
+body.dark footer p {
+    color: rgb(26, 26, 26);
 }
 
 .footer p {
