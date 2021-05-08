@@ -460,7 +460,7 @@ main {
     padding-bottom: 80px;
 }
 
-.flex-container-sejabemvindo h2 {
+.flex-container-sejabemvindo h1 {
     font-family: 'Roboto Slab';
     font-size: 60px;
     text-align: center;
@@ -576,7 +576,7 @@ main {
     padding-top: 30px;
 }
 
-body.dark h2 {
+body.dark h1, h2 {
     font-family: 'Roboto Slab';
     font-size: 60px;
     color: white;
@@ -592,7 +592,7 @@ body.dark h3 {
     color: white;
 }
 
-h2 {
+h1, h2 {
     font-family: 'Roboto Slab';
     font-size: 2.25rem;
     color: #33383c;
