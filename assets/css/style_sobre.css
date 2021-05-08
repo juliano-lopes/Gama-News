@@ -1,143 +1,135 @@
-.main-perfil .navmain h1 {
+body.dark footer p {
+    color: black;
+}
+
+body.dark .secaoSobre h1 {
+    padding-top: 5%;
     text-align: center;
-    font-size: 40px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 75px;
+    font-family: 'Roboto Slab';
     text-transform: uppercase;
-    font-weight: 600;
     padding-left: 3%;
     padding-right: 3%;
+}
+
+body.dark .cabecalho-sobre h2 {
+    color: white;
+}
+
+body.dark .corpo-perfil h3 {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Roboto Slab';
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 4%;
+}
+
+body.dark .corpo-perfil h4 {
+    color: white;
+}
+
+body.dark .sobre-right button {
     color: black;
+    background-color: white;
 }
 
-.main-perfil .navmain .main-titulo {
-    padding-top: 3%;
+.secaoSobre h1 {
+    padding-top: 5%;
+    text-align: center;
+    font-size: 75px;
+    font-family: 'Roboto Slab';
+    text-transform: uppercase;
+    padding-left: 3%;
+    padding-right: 3%;
+    color: #7ed45f;
 }
 
-.main-perfil .navmain a {
-    text-decoration: none;
-    color: black;
+.secaoSobre p {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto Slab';
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
-.main-perfil .navmain .flex-container .flex-item-left .image-perfil img {
-    width: 30%;
-    border-radius: 5%;
+.sobre {
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
-.main-perfil .navmain .flex-container .flex-item-left .image-icon-perfil img,
-a {
-    width: 12%;
-}
-
-.main-perfil .navmain .flex-container {
-    display: block;
+.cabecalho-sobre {
+    display: flex;
+    flex-direction: row;
     font-size: 30px;
     text-align: center;
-    border-radius: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
-    margin-bottom: 5%;
 }
 
-.main-perfil .navmain .flex-item-left {
+.cabecalho-sobre>div {
+    width: 50%;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.cabecalho-sobre h2 {
+    font-size: 80px;
+    font-family: 'Roboto Slab';
+    text-transform: uppercase;
+    text-align: center;
+    color: #7ed45f;
+}
+
+.cabecalho-sobre .sobre-left {
     padding-left: 6px;
     padding-right: 6px;
     flex: 40%;
 }
 
-.main-perfil .navmain .flex-item-right {
-    padding-bottom: 10px;
-    padding-left: 0;
-    padding-right: 0;
+.sobre-right button {
+    background-color: #559140fa;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    padding: 20px 50px;
+    cursor: pointer;
+    margin-bottom: 5%;
+}
+
+.sobre-right h3 {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Roboto Slab';
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 4%;
+}
+
+.sobre-right p {
+    text-align: justify;
+    font-size: 35px;
+    font-family: 'Roboto Slab';
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;
+}
+
+.cabecalho-sobre .sobre-right {
+    padding-left: 6px;
+    padding-right: 6px;
     flex: 60%;
 }
 
-.flex-item-right h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: 'Roboto Slab';
-    font-size: 45px;
-    color: #33383c;
-    text-align: center;
-    margin-bottom: 1rem;
-    font-weight: 700;
+.sobre .cabecalho-sobre .image-perfil img {
+    padding-top: 8%;
+    width: 45%;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
-.flex-item-right p {
-    font-family: 'Roboto Slab';
-    font-size: 32px;
-    color: #33383c;
-    text-align: justify;
-    margin-bottom: 1rem;
-    font-weight: 700;
+.icon-perfil img {
+    width: 30%;
 }
-
-body.dark .main-perfil h1 {
-    color: white;
-}
-
-body.dark .navmain h2,
-h3,
-h4,
-h5 {
-    font-family: 'Roboto Slab';
-    font-size: 45px;
-    color: #FFFFFF;
-    text-align: center;
-    margin-bottom: 1rem;
-    font-weight: 700;
-}
-
-
-/*
-INICIO testando expand
-
-*/
-
-.expansao {
-    background-color: #7ed45f;
-    color: black;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: center;
-    outline: none;
-    font-size: 35px;
-    font-weight: 700;
-    font-family: 'Roboto Slab';
-    margin-top: 2%;
-    margin-bottom: 3%;
-}
-
-body.dark .expansao {
-    background-color: white;
-}
-
-.active,
-.expansao:hover {
-    background-color: #7ed45f67;
-}
-
-body.dark .expansao:hover {
-    background-color: white;
-}
-
-.content-expanded {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
-}
-
-body.dark .content-expanded {
-    background-color: transparent;
-    color: white;
-}
-
-
-/*
-FINAL testando expand
-*/
