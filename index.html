@@ -10,48 +10,17 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-
-
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" charset="utf-8">
-var $z = jQuery.noConflict();
-$z(document).ready(function(){
-$z("#aumentar-fonte").click(function () {
-var size = $z("#content p").css('font-size');
-
-size = size.replace('px', '');
-size = parseInt(size) + 2;
-
-$z("#content p").animate({'font-size' : size + 'px'});
-return false;
-});
-
-$z("#diminuir-fonte").click(function () {
-var size = $z("#content p").css('font-size');
-
-size = size.replace('px', '');
-size = parseInt(size) - 2;
-
-$z("#content p").animate({'font-size' : size + 'px'});
-return false;
-});
-});
-</script>
 </head>
 
 
 
 <body>
 
-<!-- DIMINUIR FONTE -->
-<span id="diminuir-fonte">
-<a title="Diminuir Fonte" alt="Diminuir">A-</a>
-</span>
+        <div class="btn-container">
+            <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+            <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+        </div>
 
-<!-- AUMENTAR FONTE -->
-<span id="aumentar-fonte">
-<a title="Aumentar Fonte" alt="Aumentar">A+</a>
-</span>
 
     <header>
 
@@ -373,6 +342,7 @@ return false;
     <script src="assets/js/noticia.js"></script>
     <script src="assets/js/btnMenu.js"></script>
     <script src="assets/js/toggleContrast.js"></script>
+    <script src="assets/js/fonte.js"></script>
 
 </body>
 
