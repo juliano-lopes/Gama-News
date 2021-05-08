@@ -5,7 +5,7 @@ body.dark footer p {
 body.dark .secaoSobre h1 {
     padding-top: 5%;
     text-align: center;
-    font-size: 75px;
+    font-size: 50px;
     font-family: 'Roboto Slab';
     text-transform: uppercase;
     padding-left: 3%;
@@ -18,7 +18,7 @@ body.dark .cabecalho-sobre h2 {
 
 body.dark .corpo-perfil h3 {
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     font-family: 'Roboto Slab';
     padding-left: 20%;
     padding-right: 20%;
@@ -34,10 +34,69 @@ body.dark .sobre-right button {
     background-color: white;
 }
 
+.navfontsize {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.navfontsize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navfontsize li {
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#aumentar-fonte {
+    font-family: 'Roboto Slab';
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+#diminuir-fonte {
+    font-family: 'Roboto Slab';
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+.navfontsize button {
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to right, #6EB853, #4c8637);
+    cursor: pointer;
+}
+
+.secaoSobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 90px;
+}
+
 .secaoSobre h1 {
     padding-top: 5%;
     text-align: center;
-    font-size: 75px;
+    font-size: 50px;
     font-family: 'Roboto Slab';
     text-transform: uppercase;
     padding-left: 3%;
@@ -47,7 +106,7 @@ body.dark .sobre-right button {
 
 .secaoSobre p {
     text-align: center;
-    font-size: 30px;
+    font-size: 23px;
     font-family: 'Roboto Slab';
     padding-left: 20%;
     padding-right: 20%;
@@ -61,57 +120,45 @@ body.dark .sobre-right button {
 .cabecalho-sobre {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     font-size: 30px;
     text-align: center;
-}
-
-.cabecalho-sobre>div {
-    width: 50%;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
 }
 
 .cabecalho-sobre h2 {
-    font-size: 65px;
+    font-size: 30px;
     font-family: 'Roboto Slab';
     text-transform: uppercase;
     text-align: center;
-    color: #7ed45f;
+    color: #1f1f1f;
 }
 
-.cabecalho-sobre .sobre-left {
-    padding-left: 6px;
-    padding-right: 6px;
-    flex: 40%;
-    flex-wrap: wrap;
-}
-
-.cabecalho-sobre .sobre-right {
-    padding-left: 6px;
-    padding-right: 6px;
-    flex: 60%;
-    flex-wrap: wrap;
+.sobre-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .sobre-right button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #559140fa;
     color: white;
     text-align: center;
-    font-size: 40px;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    padding: 20px 50px;
     cursor: pointer;
 }
 
 .sobre-right h3 {
     text-align: center;
-    font-size: 60px;
+    font-size: 30px;
     font-family: 'Roboto Slab';
     padding-left: 20%;
     padding-right: 20%;
@@ -121,20 +168,30 @@ body.dark .sobre-right button {
 
 .sobre-right p {
     text-align: justify;
-    font-size: 35px;
+    font-size: 22px;
     font-family: 'Roboto Slab';
     padding-left: 5%;
     padding-right: 5%;
     margin-bottom: 5%;
 }
 
+.corpo-perfil {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    width: 100%;
+    padding-top: 30px;
+    background: rgb(211, 211, 211);
+}
+
 .sobre .cabecalho-sobre .image-perfil img {
-    padding-top: 8%;
-    width: 30%;
+    padding-top: 10%;
+    width: 40%;
     padding-left: 6px;
     padding-right: 6px;
 }
 
 .icon-perfil img {
-    width: 20%;
+    width: 15%;
 }

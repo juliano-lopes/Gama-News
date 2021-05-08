@@ -354,6 +354,56 @@ ol, ul {
 	transform: translateX(24px);
 }
 
+.navfontsize {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.navfontsize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navfontsize li {
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#aumentar-fonte {
+    font-family: 'Roboto Slab';
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+
+#diminuir-fonte {
+    font-family: 'Roboto Slab';
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+.navfontsize button {
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to right, #6EB853, #4c8637);
+    cursor: pointer;
+}
+
 body {
     width: 100%;
     height: 100%;
@@ -386,6 +436,8 @@ body {
 
 .descricao-saibamais {
     margin-top: 30px;
+    margin-left: 160px;
+    margin-bottom: 20px;
 }
 
 .container-saibamais p {
@@ -422,6 +474,10 @@ body.dark p {
     color: white;
 }
 
+body.dark footer p {
+    color:rgb(26, 26, 26)
+}
+
 .footer {
     display: flex;
     flex-flow: column wrap;
@@ -430,9 +486,9 @@ body.dark p {
     background: #6eb853;
 }
 
-.footer h3 {
+.footer p {
     font-family: 'Roboto Slab';
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     margin: 20px;
     color: #1d1d1d;    

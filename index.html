@@ -56,6 +56,12 @@
                             <div class="ball"></div>
                         </label>
                     </div>
+                    <div class="navfontsize">
+                    <ul id="fonte-lista-dropdown" class="aria-expended">
+                        <li><button id="aumentar-fonte">A+</button></li>
+                        <li><button id="diminuir-fonte">A-</button></li>
+                    </ul>
+                    </div>
                 </section>
             </nav>
         </div>
@@ -84,6 +90,12 @@
             </article>
         </section>
     </header>
+    <div vw class="enabled">
+        <div role="button" vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
     <main class="content container-main">
         <section class="homeHero top-0 left-0 relative text-black bg-gama-black">
             <section class="heroCarousel">
@@ -103,7 +115,7 @@
             <div class="flex-container-frase-sejabemvindo">
                 <article>
                     <p>A pandemia do Coronavírus (Covid-19) assola o mundo todo com milhares de notícias negativas e
-                        preocupantes diariamente a mais de um ano. <br>
+                        preocupantes diariamente há mais de um ano. <br>
                         Pensando nisso, essa página foi desenvolvida com o intuito de mudar esse cenário, fazendo um
                         compilado do outro lado, de notícias que trazem ânimo e esperança a população mundial, ou seja,
                         as notícias boas!<br>
@@ -192,13 +204,10 @@
                 </div>
                 <div class="corpo-noticia" style="display: none">
                     <p> Cemal estava internado no local, onde estava sendo tratado para uma embolia cerebral.
-                    </p>
-                    <p> De noite, Boncuk ia embora ao concluir que não veria seu dono naquele dia, mas sempre
-                        voltava na manhã seguinte. </p>
-                    <p> A equipe do hospital a alimentou enquanto ela aguardava por Cemal por dias a fio. </p>
-                    <p> Até que ele finalmente recebeu alta - e foi prontamente recebido com muita alegria pela
-                        cadelinha. </p>
-                    <p> "Somos muito próximos, como se ela fosse humana", disse o dono de Boncuk. "Ela me faz
+                        De noite, Boncuk ia embora ao concluir que não veria seu dono naquele dia, mas sempre
+                        voltava na manhã seguinte. A equipe do hospital a alimentou enquanto ela aguardava por Cemal por dias a fio.
+                        Até que ele finalmente recebeu alta - e foi prontamente recebido com muita alegria pela
+                        cadelinha. "Somos muito próximos, como se ela fosse humana", disse o dono de Boncuk. "Ela me faz
                         feliz". </p>
                     <p> Pelo visto, o sentimento é recíproco. </p>
                     <p> Assista ao vídeo:
@@ -337,9 +346,15 @@
         </div>
         <p>&copy; GAMANEWS - todos os direitos reservados.</p>
     </footer>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
     <script src="assets/js/noticia.js"></script>
     <script src="assets/js/btnMenu.js"></script>
     <script src="assets/js/toggleContrast.js"></script>
+    <script src="assets/js/fonte.js"></script>
 </body>
 
 </html>
