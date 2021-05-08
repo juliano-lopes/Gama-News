@@ -1,4 +1,4 @@
-function mostrarOcultarPerfil(botaoClicado) {
+function mostrarOcultarElemento(botaoClicado) {
 	// pega o elemento button que contém o atributo aria-expanded com o valor true
 	let botaoExpandido = document.querySelector('button[aria-expanded="true"]');
 	// verifica se o botão existe, se é verdadeiro, se não é nulo
