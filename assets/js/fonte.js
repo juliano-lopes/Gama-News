@@ -1,24 +1,24 @@
-        let incrementoDecremento = 2;
-        document.getElementById("aumentar-fonte").addEventListener("click", () => {
-            document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, a, span, button, header, div, nav, article, section, ul, li, imput, main, i, footer").forEach(function (el) {
-                
-                let fonteOriginal = parseInt(window.getComputedStyle(el).getPropertyValue("font-size"));
-                let novaFonte = fonteOriginal+incrementoDecremento;
-                el.setAttribute("style", "font-size: " + novaFonte + "px");
-                console.log("a fonte foi " + fonteOriginal + ", e aumentada ficou " + novaFonte);
-            });
+let incrementoDecremento = 2;
+document.getElementById("aumentar-fonte").addEventListener("click", () => {
+    document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, a, button").forEach(function (el) {
+
+        let fonteOriginal = parseInt(window.getComputedStyle(el).getPropertyValue("font-size"));
+        let novaFonte = fonteOriginal + incrementoDecremento;
+        el.setAttribute("style", "font-size: " + novaFonte + "px");
+        console.log("a fonte foi " + fonteOriginal + ", e aumentada ficou " + novaFonte);
+    });
 
 
-        });
+});
 
-        document.getElementById("diminuir-fonte").addEventListener("click", () => {
-            document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, a, span, button").forEach((el) => {
-                
-                let fonteOriginal = parseInt(window.getComputedStyle(el).getPropertyValue("font-size"));
-                let novaFonte = fonteOriginal-incrementoDecremento;
-                el.setAttribute("style", "font-size: " + novaFonte + "px");
-                console.log("a fonte foi " + fonteOriginal + ", e diminuida ficou " + novaFonte);
-            });
+document.getElementById("diminuir-fonte").addEventListener("click", () => {
+    document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, a, button").forEach((el) => {
+
+        let fonteOriginal = parseInt(window.getComputedStyle(el).getPropertyValue("font-size"));
+        let novaFonte = fonteOriginal - incrementoDecremento;
+        el.setAttribute("style", "font-size: " + novaFonte + "px");
+        console.log("a fonte foi " + fonteOriginal + ", e diminuida ficou " + novaFonte);
+    });
 
 
-        });
+});
