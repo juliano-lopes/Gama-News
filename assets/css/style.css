@@ -619,6 +619,10 @@ div.linha-vertical {
 	border-bottom: 2px solid rgb(189, 189, 189);
 }
 
+body.dark p {
+    color: rgb(26, 26, 26);
+}
+
 .footer {
     display: flex;
     flex-flow: column wrap;
@@ -629,7 +633,7 @@ div.linha-vertical {
 
 .footer p {
     font-family: 'Roboto Slab';
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     margin: 20px;
     color: #1d1d1d;    

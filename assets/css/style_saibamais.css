@@ -386,6 +386,8 @@ body {
 
 .descricao-saibamais {
     margin-top: 30px;
+    margin-left: 160px;
+    margin-bottom: 20px;
 }
 
 .container-saibamais p {
@@ -422,6 +424,10 @@ body.dark p {
     color: white;
 }
 
+body.dark footer p {
+    color:rgb(26, 26, 26)
+}
+
 .footer {
     display: flex;
     flex-flow: column wrap;
@@ -430,9 +436,9 @@ body.dark p {
     background: #6eb853;
 }
 
-.footer h3 {
+.footer p {
     font-family: 'Roboto Slab';
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     margin: 20px;
     color: #1d1d1d;    
