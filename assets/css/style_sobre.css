@@ -1,0 +1,143 @@
+.main-perfil .navmain h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-left: 3%;
+    padding-right: 3%;
+    color: black;
+}
+
+.main-perfil .navmain .main-titulo {
+    padding-top: 3%;
+}
+
+.main-perfil .navmain a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-perfil .navmain .flex-container .flex-item-left .image-perfil img {
+    width: 30%;
+    border-radius: 5%;
+}
+
+.main-perfil .navmain .flex-container .flex-item-left .image-icon-perfil img,
+a {
+    width: 12%;
+}
+
+.main-perfil .navmain .flex-container {
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.main-perfil .navmain .flex-item-left {
+    padding-left: 6px;
+    padding-right: 6px;
+    flex: 40%;
+}
+
+.main-perfil .navmain .flex-item-right {
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    flex: 60%;
+}
+
+.flex-item-right h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Roboto Slab';
+    font-size: 45px;
+    color: #33383c;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.flex-item-right p {
+    font-family: 'Roboto Slab';
+    font-size: 32px;
+    color: #33383c;
+    text-align: justify;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+body.dark .main-perfil h1 {
+    color: white;
+}
+
+body.dark .navmain h2,
+h3,
+h4,
+h5 {
+    font-family: 'Roboto Slab';
+    font-size: 45px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+
+/*
+INICIO testando expand
+
+*/
+
+.expansao {
+    background-color: #7ed45f;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Roboto Slab';
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+body.dark .expansao {
+    background-color: white;
+}
+
+.active,
+.expansao:hover {
+    background-color: #7ed45f67;
+}
+
+body.dark .expansao:hover {
+    background-color: white;
+}
+
+.content-expanded {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+body.dark .content-expanded {
+    background-color: transparent;
+    color: white;
+}
+
+
+/*
+FINAL testando expand
+*/
