@@ -265,6 +265,7 @@ ol, ul {
     width: 40px;
     height: 40px;
     background: linear-gradient(to right, #6EB853, #4c8637);
+    cursor: pointer;
 }
 
 .section-nav.active-nav{
