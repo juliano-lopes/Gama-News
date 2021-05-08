@@ -1,6 +1,6 @@
         let incrementoDecremento = 2;
         document.getElementById("aumentar-fonte").addEventListener("click", () => {
-            document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, a, span, button").forEach(function (el) {
+            document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, a, span, button, header, div, nav, article, section, ul, li, imput, main, i, footer").forEach(function (el) {
                 
                 let fonteOriginal = parseInt(window.getComputedStyle(el).getPropertyValue("font-size"));
                 let novaFonte = fonteOriginal+incrementoDecremento;

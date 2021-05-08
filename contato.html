@@ -8,8 +8,7 @@
     <title>GAMA News</title>
     <link name="Material Design" rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/noticia.js"></script>
+    <link rel="stylesheet" href="assets/css/style_contato.css">
 </head>
 
 <body>
@@ -50,6 +49,8 @@
                         </li>
                     </ul>
                 </section>
+                <button id="aumentar-fonte">Aumentar fonte</button>
+                <button id="diminuir-fonte">Diminuir fonte</button>
                 <section class="navcontrast">
                     <div>
                         <input aria-label="Ativar contraste" type="checkbox" class="checkbox" id="chk" />
@@ -63,9 +64,9 @@
         <section id="section-nav" class="section-nav">
             <article>
                 <div class="title-section-nav">
-                    <h2 class="title-menu-nav">
+                    <h1 class="title-menu-nav">
                         MENU
-                    </h2>
+                    </h1>
                     <i id="close-menu" class="icon-close-menu zmdi zmdi-close"></i>
                 </div>
                 <nav class="nav-menu-li">
@@ -86,10 +87,9 @@
         </section>
     </header>
     <main>
-        <section>
-            <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLSfGvh1VbnxVaqKPAucdzRXgEDd3ZRDVajDRY_VjznyTgCyqfA/viewform?embedded=true"
-                width="640" height="1037" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+        <section class="container-form">
+            <div class="typeform-widget" data-url="https://form.typeform.com/to/kaSMxKga?typeform-medium=embed-snippet">
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -102,8 +102,11 @@
         <p>&copy; GAMANEWS - todos os direitos reservados.</p>
     </footer>
 
+    <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })()</script>
+    <script src="assets/js/noticia.js"></script>
     <script src="assets/js/btnMenu.js"></script>
     <script src="assets/js/toggleContrast.js"></script>
+    <script src="assets/js/fonte.js"></script>
 </body>
 
 </html>
