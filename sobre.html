@@ -52,8 +52,6 @@
                         </li>
                     </ul>
                 </section>
-                <button id="aumentar-fonte">Aumentar fonte</button>
-                <button id="diminuir-fonte">Diminuir fonte</button>
                 <section class="navcontrast">
                     <div>
                         <input aria-label="Ativar contraste" type="checkbox" class="checkbox" id="chk" />
@@ -61,6 +59,13 @@
                             <div class="ball"></div>
                         </label>
                     </div>
+                </section>
+                <section>
+                    <button aria-expanded="false" id="aumentar-diminuir-fonte">Aumentar ou diminuir fonte</button>
+                    <ul id="fonte-lista-dropdown" style="display: none;">
+                        <li><button id="aumentar-fonte">Aumentar fonte</button></li>
+                        <li><button id="diminuir-fonte">Diminuir fonte</button></li>
+                    </ul>
                 </section>
             </nav>
         </div>
