@@ -22,7 +22,7 @@ body.dark .corpo-perfil h3 {
     font-family: 'Roboto Slab';
     padding-left: 20%;
     padding-right: 20%;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
 }
 
 body.dark .corpo-perfil h4 {
@@ -74,7 +74,7 @@ body.dark .sobre-right button {
 }
 
 .cabecalho-sobre h2 {
-    font-size: 80px;
+    font-size: 65px;
     font-family: 'Roboto Slab';
     text-transform: uppercase;
     text-align: center;
@@ -85,18 +85,28 @@ body.dark .sobre-right button {
     padding-left: 6px;
     padding-right: 6px;
     flex: 40%;
+    flex-wrap: wrap;
+}
+
+.cabecalho-sobre .sobre-right {
+    padding-left: 6px;
+    padding-right: 6px;
+    flex: 60%;
+    flex-wrap: wrap;
 }
 
 .sobre-right button {
     background-color: #559140fa;
-    border: none;
     color: white;
     text-align: center;
-    text-decoration: none;
     font-size: 40px;
-    padding: 20px 50px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 40px 10px 40px;
     cursor: pointer;
-    margin-bottom: 5%;
 }
 
 .sobre-right h3 {
@@ -105,7 +115,8 @@ body.dark .sobre-right button {
     font-family: 'Roboto Slab';
     padding-left: 20%;
     padding-right: 20%;
-    margin-bottom: 4%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .sobre-right p {
@@ -117,19 +128,13 @@ body.dark .sobre-right button {
     margin-bottom: 5%;
 }
 
-.cabecalho-sobre .sobre-right {
-    padding-left: 6px;
-    padding-right: 6px;
-    flex: 60%;
-}
-
 .sobre .cabecalho-sobre .image-perfil img {
     padding-top: 8%;
-    width: 45%;
+    width: 30%;
     padding-left: 6px;
     padding-right: 6px;
 }
 
 .icon-perfil img {
-    width: 30%;
+    width: 20%;
 }
