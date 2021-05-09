@@ -732,14 +732,16 @@ main {
             font-size: 30px;
             text-align: center;
             color: black;
+            padding: 0 17%;
         }
         .cabecalho-noticia p {
             font-family: 'Roboto Slab';
             font-size: 20px;
-            text-align: center;
+            text-align: justify;
             color: black;
             margin-top: 30px;
             transition: height .4s;
+            padding: 0 17%;
         }
         .cabecalho-noticia img {
             display: flex;
