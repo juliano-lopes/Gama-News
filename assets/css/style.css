@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap');
-
 * {
     box-sizing: border-box;
 }
 
-*, :focus {
+*,
+ :focus {
     outline: 0;
 }
 
-*,::after, ::before {
+*,
+::after,
+ ::before {
     box-sizing: border-box;
     border-width: 0;
     border-style: solid;
@@ -42,7 +44,87 @@ body.dark {
     background: rgb(26, 26, 26);
 }
 
-a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -51,7 +133,17 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
 
@@ -87,7 +179,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     font-weight: 400;
     width: 100%;
     grid-template-areas: "... logo menu";
-    grid-template-columns: 1fr 3fr 1fr; 
+    grid-template-columns: 1fr 3fr 1fr;
     height: 90px;
     padding: 0 10px;
     z-index: 10;
@@ -130,7 +222,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     }
 }
 
-.nav-menu .gridLogo{
+.nav-menu .gridLogo {
     -ms-flex-align: center;
     align-items: center;
     display: -ms-flexbox;
@@ -198,12 +290,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-decoration: none;
 }
 
-
-ol, ul {
+ol,
+ul {
     list-style: none;
 }
 
-ol, ul {
+ol,
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -251,7 +344,6 @@ ol, ul {
     font-weight: 700;
 }
 
-
 #diminuir-fonte {
     font-family: 'Roboto Slab';
     font-size: 18px;
@@ -268,9 +360,9 @@ ol, ul {
     cursor: pointer;
 }
 
-.section-nav.active-nav{
-    -ms-transform: translate(0,0);
-    transform: translate(0,0);
+.section-nav.active-nav {
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
     transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
@@ -286,8 +378,8 @@ ol, ul {
     z-index: 200;
     position: fixed;
     overflow: auto;
-    -ms-transform: translate(-101%,0);
-    transform: translate(-101%,0);
+    -ms-transform: translate(-101%, 0);
+    transform: translate(-101%, 0);
     transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
@@ -370,38 +462,38 @@ ol, ul {
 }
 
 .checkbox {
-	opacity: 0;
-	position: absolute;
+    opacity: 0;
+    position: absolute;
 }
 
 .label {
-	background: linear-gradient(to right, #6EB853, #4c8637);
-	border-radius: 50px;
-	cursor: pointer;
+    background: linear-gradient(to right, #6EB853, #4c8637);
+    border-radius: 50px;
+    cursor: pointer;
     display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 5px;
-	position: relative;
-	height: 26px;
-	width: 50px;
-	transform: scale(1.0);
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.0);
 }
 
 .label .ball {
-	background-color: #fff;
-	border-radius: 50%;
-	position: absolute;
-	top: 2px;
-	left: 2px;
-	height: 22px;
-	width: 22px;
-	transform: translateX(0px);
-	transition: transform 0.2s linear;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
 }
 
-.checkbox:checked + .label .ball {
-	transform: translateX(24px);
+.checkbox:checked+.label .ball {
+    transform: translateX(24px);
 }
 
 body {
@@ -560,7 +652,15 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px 300px;
+    margin: 5%;
+}
+
+.cabecalho-noticia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 100%;
 }
 
 .cabecalho-noticia h3 {
@@ -589,12 +689,12 @@ main {
 
 .cabecalho-noticia button {
     background: linear-gradient(to right, #6EB853, #5ea744);
-	cursor: pointer;
+    cursor: pointer;
     display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 30px;
-	width: 150px;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 150px;
 }
 
 .cabecalho-noticia button {
@@ -616,6 +716,7 @@ main {
     text-align: flex-start;
     color: black;
     margin-top: 30px;
+    text-align: justify;
 }
 
 .corpo-noticia h3 {
@@ -626,7 +727,8 @@ main {
     padding-top: 30px;
 }
 
-body.dark h1, h2 {
+body.dark h1,
+h2 {
     font-family: 'Roboto Slab';
     font-size: 60px;
     color: white;
@@ -642,7 +744,8 @@ body.dark h3 {
     color: white;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: 'Roboto Slab';
     font-size: 2.25rem;
     color: #33383c;
@@ -656,15 +759,15 @@ body.dark p {
 }
 
 div.linha-vertical {
-	padding: 0;
-	width: 100%;
+    padding: 0;
+    width: 100%;
     margin-top: auto;
     margin-bottom: auto;
 }
 
 div.linha-vertical {
-	padding: .5em 0;
-	border-bottom: 2px solid rgb(189, 189, 189);
+    padding: .5em 0;
+    border-bottom: 2px solid rgb(189, 189, 189);
 }
 
 .footer {
@@ -684,7 +787,7 @@ body.dark footer p {
     font-size: 16px;
     text-align: center;
     margin: 20px;
-    color: #1d1d1d;    
+    color: #1d1d1d;
 }
 
 .footer-img {
