@@ -18,7 +18,7 @@ body.dark .cabecalho-sobre h2 {
 
 body.dark .corpo-perfil h3 {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Roboto Slab';
     padding-left: 20%;
     padding-right: 20%;
@@ -91,6 +91,7 @@ body.dark .sobre-right button {
     width: 100%;
     height: 100%;
     margin-top: 90px;
+    margin-bottom: 90px;
 }
 
 .secaoSobre h1 {
