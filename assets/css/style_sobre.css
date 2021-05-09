@@ -181,8 +181,17 @@ body.dark .sobre-right button {
     align-items: center;
     text-align: start;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 10px;
+    margin-top: 30px;
     background: rgb(211, 211, 211);
+}
+
+body.dark .corpo-perfil h3 {
+    color: #1f1f1f;
+}
+
+body.dark .corpo-perfil p {
+    color: #1f1f1f;
 }
 
 .sobre .cabecalho-sobre .image-perfil img {
