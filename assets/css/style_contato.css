@@ -444,7 +444,7 @@ body.dark footer p {
     color: rgb(26, 26, 26);
 }
 
-.footer {
+footer {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
@@ -452,18 +452,21 @@ body.dark footer p {
     background: #6eb853;
 }
 
+body.dark footer p {
+    color: rgb(26, 26, 26);
+}
+
 .footer p {
     font-family: 'Roboto Slab';
     font-size: 16px;
     text-align: center;
     margin: 20px;
-    color: #1d1d1d;    
+    color: #1d1d1d;
 }
 
 .footer-img {
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
     object-fit: cover;
     justify-content: center;
     width: 100%;
