@@ -732,21 +732,24 @@ main {
             font-size: 30px;
             text-align: center;
             color: black;
+            padding: 0 17%;
         }
         .cabecalho-noticia p {
             font-family: 'Roboto Slab';
             font-size: 20px;
-            text-align: center;
+            text-align: justify;
             color: black;
             margin-top: 30px;
             transition: height .4s;
+            padding: 0 17%;
         }
         .cabecalho-noticia img {
             display: flex;
-            max-width: 100vw;
+            max-width: 60vw;
             justify-content: center;
             align-items: center;
             margin-top: 30px;
+            margin-left: 17%;
         }
         .cabecalho-noticia button {
             background: linear-gradient(to right, #6EB853, #5ea744);
@@ -756,12 +759,21 @@ main {
             justify-content: center;
             height: 30px;
             width: 150px;
+            margin-left: 17%;
         }
         .cabecalho-noticia button {
             font-family: 'Roboto';
             font-size: 20px;
             text-transform: uppercase;
             color: white;
+        }
+        .corpo-noticia {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 30px;
+            width: 100%;
+            padding: 0 17%;
         }
     }
     .cabecalho-noticia button {
