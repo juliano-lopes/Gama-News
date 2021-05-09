@@ -548,6 +548,10 @@ body.dark p {
     color: white;
 }
 
+body.dark .container-saibamais h1 {
+    color: white;
+}
+
 .footer {
     display: flex;
     flex-flow: column wrap;
